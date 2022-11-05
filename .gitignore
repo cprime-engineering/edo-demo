@@ -1,0 +1,7 @@
+coverage/*
+bazel-bin
+bazel-comms
+bazel-out
+bazel-testlogs
+bazel-edo-demo
+docker-bin

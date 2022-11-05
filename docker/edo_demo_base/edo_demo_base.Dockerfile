@@ -1,0 +1,1 @@
+FROM windriver/wrlx-image:full

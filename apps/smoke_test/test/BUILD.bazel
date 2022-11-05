@@ -1,0 +1,7 @@
+cc_test(
+  name = "smoke_test_test",
+  size = "small",
+  srcs = ["smoke_test_test.cc"],
+  deps = ["@com_google_googletest//:gtest_main", "@smoke_test//:smoke_test_library"],
+  visibility = ["//visibility:public"],
+)

@@ -1,0 +1,1 @@
+FROM edo_demo_base:latest
