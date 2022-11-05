@@ -1,8 +1,9 @@
 FROM edo_demo_release:latest
 
-RUN mkdir /lib64 \
-    && cp lib/ld-linux-x86-64.so.2 lib64/ld-linux-x86-64.so.2
+# Set working directory ---------------------------------------------------------------------------------------
+WORKDIR /
 
+# copy smoke_test executable ----------------------------------------------------------------------------------
 COPY docker-bin/smoke_test /opt/smoke-test/smoke_test
 
 # copy entrypoint.sh ------------------------------------------------------------------------------------------
