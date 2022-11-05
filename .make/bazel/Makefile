@@ -37,6 +37,14 @@ bazel/version:
 	./bazelisk --version
 
 #--------------------------------------------------------------------------------------------------------------
+# bazel lint
+#--------------------------------------------------------------------------------------------------------------
+bazel/lint:
+	buildifier --lint=fix WORKSPACE.bazel
+	buildifier --lint=fix apps/smoke_test/src/BUILD.bazel
+	buildifier --lint=fix apps/smoke_test/test/BUILD.bazel
+
+#--------------------------------------------------------------------------------------------------------------
 #
 # End bazel make targets
 #
