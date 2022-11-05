@@ -4,7 +4,7 @@ FROM edo_demo_release:latest
 WORKDIR /
 
 # copy smoke_test executable ----------------------------------------------------------------------------------
-COPY docker-bin/smoke_test /opt/smoke-test/smoke_test
+COPY docker-bin/smoke_test /usr/bin/smoke_test
 
 # copy entrypoint.sh ------------------------------------------------------------------------------------------
 COPY docker/edo_demo_test/edo_demo_test.entrypoint.sh /entrypoint.sh
