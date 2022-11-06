@@ -27,7 +27,7 @@ docker/edo_demo_release/setup: bazel/build
 # Build the edo_demo_release docker image
 #--------------------------------------------------------------------------------------------------------------
 docker/edo_demo_release/build: docker/edo_demo_base/build docker/edo_demo_release/setup
-	docker build -f docker/edo_demo_release/edo_demo_release.Dockerfile -t edo_demo_release:latest .
+	docker build -f docker/edo_demo_release/edo_demo_release.Dockerfile -t edo_demo_release:0.0.0 .
 
 #--------------------------------------------------------------------------------------------------------------
 # run
@@ -35,7 +35,7 @@ docker/edo_demo_release/build: docker/edo_demo_base/build docker/edo_demo_releas
 # Run to the edo_demo_release docker image
 #--------------------------------------------------------------------------------------------------------------
 docker/edo_demo_release/run: docker/edo_demo_release/build
-	docker run -it --entrypoint /bin/bash edo_demo_release:latest
+	docker run -it --entrypoint /bin/bash edo_demo_release:0.0.0
 
 
 #--------------------------------------------------------------------------------------------------------------

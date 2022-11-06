@@ -17,7 +17,7 @@
 # Build the edo_demo_base docker image
 #--------------------------------------------------------------------------------------------------------------
 docker/edo_demo_base/build:
-	docker build -f docker/edo_demo_base/edo_demo_base.Dockerfile -t edo_demo_base:latest .
+	docker build -f docker/edo_demo_base/edo_demo_base.Dockerfile -t edo_demo_base:0.0.0 .
 
 #--------------------------------------------------------------------------------------------------------------
 # run
@@ -25,7 +25,7 @@ docker/edo_demo_base/build:
 # Run to the edo_demo_base docker image
 #--------------------------------------------------------------------------------------------------------------
 docker/edo_demo_base/run: docker/edo_demo_base/build
-	docker run -it --entrypoint /bin/bash edo_demo_base:latest
+	docker run -it --entrypoint /bin/bash edo_demo_base:0.0.0
 
 #--------------------------------------------------------------------------------------------------------------
 #

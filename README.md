@@ -8,4 +8,3 @@
 [![Discussions](https://img.shields.io/badge/community%20&%20support-discuss%20on%20github-ED1846)](https://github.com/cprime-labs/edo-demo/discussions)
 
 # edo-demo
-

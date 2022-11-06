@@ -1,4 +1,4 @@
-const char windriver_interp[] __attribute__((section(".interp"))) 
+const char windriver_interp[] __attribute__((section(".interp")))
     = "lib/ld-linux-x86-64.so.2";
 
 #include <iostream>

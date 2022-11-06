@@ -17,7 +17,7 @@
 # Build the edo_demo_test docker image
 #--------------------------------------------------------------------------------------------------------------
 docker/edo_demo_test/build: docker/edo_demo_release/build
-	docker build -f docker/edo_demo_test/edo_demo_test.Dockerfile -t edo_demo_test:latest .
+	docker build -f docker/edo_demo_test/edo_demo_test.Dockerfile -t edo_demo_test:0.0.0 .
 
 #--------------------------------------------------------------------------------------------------------------
 # test
@@ -25,7 +25,7 @@ docker/edo_demo_test/build: docker/edo_demo_release/build
 # Test the edo_demo_test docker image
 #--------------------------------------------------------------------------------------------------------------
 docker/edo_demo_test/test: bazel/test docker/edo_demo_test/build
-	docker run edo_demo_test:latest
+	docker run edo_demo_test:0.0.0
 
 #--------------------------------------------------------------------------------------------------------------
 # run
@@ -33,7 +33,7 @@ docker/edo_demo_test/test: bazel/test docker/edo_demo_test/build
 # Run to the edo_demo_test docker image
 #--------------------------------------------------------------------------------------------------------------
 docker/edo_demo_test/run: docker/edo_demo_test/build
-	docker run -it --entrypoint /bin/sh edo_demo_test:latest
+	docker run -it --entrypoint /bin/sh edo_demo_test:0.0.0
 
 #--------------------------------------------------------------------------------------------------------------
 #

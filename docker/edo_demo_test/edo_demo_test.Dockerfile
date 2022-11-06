@@ -1,4 +1,4 @@
-FROM edo_demo_release:latest
+FROM edo_demo_release:0.0.0
 
 # Set working directory ---------------------------------------------------------------------------------------
 WORKDIR /
