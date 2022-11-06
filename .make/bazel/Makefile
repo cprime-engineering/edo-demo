@@ -41,8 +41,8 @@ bazel/version:
 #--------------------------------------------------------------------------------------------------------------
 bazel/lint:
 	buildifier --lint=fix WORKSPACE.bazel
-	buildifier --lint=fix apps/smoke_test/src/BUILD.bazel
-	buildifier --lint=fix apps/smoke_test/test/BUILD.bazel
+	buildifier --lint=fix cpp/apps/smoke_test/src/BUILD.bazel
+	buildifier --lint=fix cpp/apps/smoke_test/test/BUILD.bazel
 
 #--------------------------------------------------------------------------------------------------------------
 #

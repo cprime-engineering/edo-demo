@@ -18,7 +18,7 @@
 #--------------------------------------------------------------------------------------------------------------
 docker/edo_demo_release/setup: bazel/build
 	if [ -d "docker-bin" ]; then rm -Rf docker-bin; fi && mkdir docker-bin
-	cp bazel-bin/apps/smoke_test/src/smoke_test docker-bin/smoke_test
+	cp bazel-bin/cpp/apps/smoke_test/src/smoke_test docker-bin/smoke_test
 
 
 #--------------------------------------------------------------------------------------------------------------

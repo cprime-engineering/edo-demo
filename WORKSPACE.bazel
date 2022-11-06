@@ -32,6 +32,6 @@ http_archive(
 
 new_local_repository(
     name = "smoke_test",
-    build_file = "apps/smoke_test/src/BUILD.bazel",
-    path = "apps/smoke_test/src",
+    build_file = "cpp/apps/smoke_test/src/BUILD.bazel",
+    path = "cpp/apps/smoke_test/src",
 )
