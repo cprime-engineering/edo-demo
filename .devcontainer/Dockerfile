@@ -30,6 +30,12 @@ RUN gem install github_changelog_generator
 # As codespace user -------------------------------------------------------------------------------------------
 USER codespace
 
+# Install bazel buildifier -------------------------------------------------------------------------------------
+RUN go install github.com/bazelbuild/buildtools/buildifier@latest
+
+# Install bazel buildozer --------------------------------------------------------------------------------------
+RUN go install github.com/bazelbuild/buildtools/buildozer@latest
+
 # Install grype -----------------------------------------------------------------------------------------------
 RUN curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b ~/grype
 
