@@ -1,0 +1,13 @@
+---
+remote_theme: just-the-docs/just-the-docs
+title: EDO Demo Docs
+description: "Embedded DevSecOps demo project from Cprime Labs."
+url: https://cprime-labs.github.io/
+baseurl: edo-demo/
+color_scheme: dark
+aux_links:
+  "Fork me on GitHub":
+    - "//github.com/cprime-labs/edo-demo/"
+  "v0.0.0":
+    - "//github.com/cprime-labs/edo-demo/tags"
+aux_links_new_tab: true
