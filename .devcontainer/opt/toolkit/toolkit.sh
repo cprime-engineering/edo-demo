@@ -38,7 +38,7 @@ logo () {
     echo_with_color ${Bold_Blue} "/_______  /|____/__||__|  \___  >         /_______  /\___  >\_/ \_______  /   __/____  >"
     echo_with_color ${Bold_Yellow} "        \/                    \/                  \/     \/             \/|__|       \/ "
     echo_with_color ${Bold_Red} "-------------------------------------------------------------------------------------------"
-    echo_with_color ${Bold_Yellow} "------------------------------------------------------ Cloud-Native DevSevOps Goodness ----"
+    echo_with_color ${Bold_Yellow} "---------------------------------------------------------- Embedded DevSecOps Goodness ----"
     echo_with_color ${Bold_Red} ""
 }
 
