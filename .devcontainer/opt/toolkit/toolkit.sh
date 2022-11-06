@@ -49,5 +49,5 @@ logo () {
 home () {
     clear
     logo
-    cd /workspaces/cqa-demo
+    cd /workspaces/edo-demo
 }
