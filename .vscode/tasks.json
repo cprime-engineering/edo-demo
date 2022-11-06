@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Configure pre-commit",
+			"type": "shell",
+			"command": "pre-commit install && pre-commit install-hooks",
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"runOptions": {
+				"runOn": "folderOpen"
+			}
+		},
+	]
+}
