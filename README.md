@@ -7,6 +7,6 @@
 [![Latest](https://img.shields.io/badge/latest-0.0.0-ED1846)](https://github.com/cprime-labs/edo-demo/releases)
 [![Discussions](https://img.shields.io/badge/community%20&%20support-discuss%20on%20github-ED1846)](https://github.com/cprime-labs/edo-demo/discussions)
 
-# edo-demo
+# Embedded DevSecOps Demo
 
 <img src=".assets/embedded-devops-banner.jpg"/>
