@@ -66,7 +66,7 @@ CPrime Engineering can help with:
 
 Contributions are welcome. Check out the
 [Contribution Guidelines](/CONTRIBUTING.md) and
-[Code of Conduct](/CONDUCT.md) for instructions.
+[Code of Conduct](/CODE_OF_CONDUCT.md) for instructions.
 
 ## How is this repo versioned?
 
