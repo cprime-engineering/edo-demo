@@ -3,7 +3,7 @@
 
 // Demonstrate some basic assertions.
 TEST(SmokeTest, BasicAssertions) {
-
-  EXPECT_EQ("SMOKE-TEST", getMainMessage());
+  MessageClass message;
+  EXPECT_EQ("SMOKE-TEST", message.getMainMessage());
 
 }

@@ -5,7 +5,7 @@ const char windriver_interp[] __attribute__((section(".interp")))
 #include "smoke_test_message.h"
 
 int main() {
-
-    std::cout << getMainMessage() + "\n";
+    MessageClass message;
+    std::cout << message.getMainMessage() + "\n";
     return 0;
 }
