@@ -47,7 +47,8 @@
 				"golang.go",
 				"alexkrechik.cucumberautocomplete",
 				"ms-python.python",
-				"bazelbuild.vscode-bazel"
+				"bazelbuild.vscode-bazel",
+				"ms-vscode.cpptools-extension-pack"
 			]
 		}
 	},
