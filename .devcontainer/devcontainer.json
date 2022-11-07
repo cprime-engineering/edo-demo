@@ -45,7 +45,8 @@
 				"pivotal.vscode-boot-dev-pack",
 				"mechatroner.rainbow-csv",
 				"golang.go",
-				"alexkrechik.cucumberautocomplete"
+				"alexkrechik.cucumberautocomplete",
+				"ms-python.python"
 			]
 		}
 	},
