@@ -1,7 +1,7 @@
 from behave import *
 
 import sys
-sys.path.append("/workspaces/edo-demo/build")
+sys.path.append("build/")
 from smoke_test_bdd import MessageClass
 
 @given('we have behave installed')
