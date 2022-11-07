@@ -28,7 +28,7 @@ bazel/test:
 # bazel build
 #--------------------------------------------------------------------------------------------------------------
 bazel/build:
-	bazel --bazelrc=.codespace.bazelrc build ...
+	./bazelisk --bazelrc=.codespace.bazelrc build ...
 	if [ -d "build" ]; then rm -Rf build; fi && mkdir build
 	cp bazel-bin/cpp/apps/smoke_test/src/smoke_test build/smoke_test
 	cp bazel-bin/cpp/apps/smoke_test/bdd/smoke_test_bdd.so build/smoke_test_bdd.so

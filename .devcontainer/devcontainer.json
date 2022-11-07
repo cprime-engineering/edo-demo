@@ -46,7 +46,8 @@
 				"mechatroner.rainbow-csv",
 				"golang.go",
 				"alexkrechik.cucumberautocomplete",
-				"ms-python.python"
+				"ms-python.python",
+				"bazelbuild.vscode-bazel"
 			]
 		}
 	},
