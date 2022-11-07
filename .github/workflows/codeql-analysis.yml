@@ -27,7 +27,7 @@ jobs:
         with:
           languages: ${{ matrix.language }}
       - name: Pre Build
-        run: ls /usr/local/python
+        run: ls /usr/bin
       - name: Build
         run: ./bazelisk --bazelrc=.github.bazelrc build ...
       - name: Perform CodeQL Analysis
