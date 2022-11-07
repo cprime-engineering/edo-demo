@@ -1,0 +1,11 @@
+load("@pybind_config_python//:build_defs.bzl", "pybind_extension")
+
+pybind_extension(
+    name = "smoke_test_bdd",
+    srcs = ["pywrap.cc"],
+    includes = ["."],
+    visibility = ["//visibility:public"],
+    deps = [
+        "@smoke_test//:smoke_test_library",
+    ],
+)
