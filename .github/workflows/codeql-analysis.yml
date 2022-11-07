@@ -26,6 +26,8 @@ jobs:
         uses: github/codeql-action/init@v2
         with:
           languages: ${{ matrix.language }}
+      - name: Pre Build
+        run: ls /usr/local/python
       - name: Build
         run: ./bazelisk --bazelrc=.github.bazelrc build ...
       - name: Perform CodeQL Analysis
