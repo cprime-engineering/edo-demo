@@ -23,7 +23,7 @@ jobs:
         with:
           languages: ${{ matrix.language }}
       - name: Build
-        run: ./bazelisk build ...
+        run: ./bazelisk --bazelrc=.github.bazelrc build ...
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
         with:

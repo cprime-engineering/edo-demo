@@ -22,13 +22,13 @@ bazel/clean:
 # bazel test
 #--------------------------------------------------------------------------------------------------------------
 bazel/test:
-	./bazelisk test ...
+	./bazelisk --bazelrc=.local.bazelrc test ...
 
 #--------------------------------------------------------------------------------------------------------------
 # bazel build
 #--------------------------------------------------------------------------------------------------------------
 bazel/build:
-	./bazelisk build ...
+	bazel --bazelrc=.local.bazelrc build ...
 	if [ -d "build" ]; then rm -Rf build; fi && mkdir build
 	cp bazel-bin/cpp/apps/smoke_test/src/smoke_test build/smoke_test
 	cp bazel-bin/cpp/apps/smoke_test/bdd/smoke_test_bdd.so build/smoke_test_bdd.so
