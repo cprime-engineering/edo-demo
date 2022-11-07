@@ -44,7 +44,8 @@
 				"vscjava.vscode-maven",
 				"pivotal.vscode-boot-dev-pack",
 				"mechatroner.rainbow-csv",
-				"golang.go"
+				"golang.go",
+				"alexkrechik.cucumberautocomplete"
 			]
 		}
 	},
