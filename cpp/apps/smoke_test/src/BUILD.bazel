@@ -2,7 +2,6 @@ load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 
 cc_library(
     name = "smoke_test_library",
-    srcs = ["smoke_test_message.cc"],
     hdrs = ["smoke_test_message.h"],
     includes = ["."],
     visibility = ["//visibility:public"],
