@@ -2,10 +2,10 @@
 #include <smoke_test_message.h>
 
 namespace py = pybind11;
-constexpr auto byref = py::return_value_policy::reference_internal;
 
-PYBIND11_MODULE(MessageLib, m) {
-    m.doc() = "optional module docstring";
+PYBIND11_MODULE(smoke_test_bdd, m) {
+
+    m.doc() = "Python bindings for the messagelib library";
 
     py::class_<MessageClass>(m, "MessageClass")
     .def(py::init<>())

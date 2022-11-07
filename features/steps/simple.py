@@ -1,8 +1,8 @@
 from behave import *
 
 import sys
-sys.path.append("bazel-bin/cpp/apps/smoke_test/bdd")
-from MessageLib import MessageClass
+sys.path.append("/workspaces/edo-demo/build")
+from smoke_test_bdd import MessageClass
 
 @given('we have behave installed')
 def step_impl(context):
