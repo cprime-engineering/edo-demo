@@ -1,7 +1,7 @@
 from behave import *
 
 import sys
-sys.path.append("build/")
+sys.path.append("bazel-bin/cpp/apps/smoke_test/bdd/")
 from smoke_test_bdd import MessageClass
 
 @given('we have behave installed')
