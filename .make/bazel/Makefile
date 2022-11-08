@@ -16,7 +16,7 @@
 #--------------------------------------------------------------------------------------------------------------
 bazel/clean:
 	./bazelisk clean
-	if [ -d "build" ]; then rm -Rf build; fi
+	if [ -d "build-bin" ]; then rm -Rf build-bin; fi
 
 #--------------------------------------------------------------------------------------------------------------
 # bazel test
@@ -29,7 +29,7 @@ bazel/test:
 #--------------------------------------------------------------------------------------------------------------
 bazel/build:
 	./bazelisk --bazelrc=.codespace.bazelrc build ...
-	if [ -d "build-bin" ]; then rm -Rf build; fi && mkdir build-bin
+	if [ -d "build-bin" ]; then rm -Rf build-bin; fi && mkdir build-bin
 	cp bazel-bin/cpp/apps/smoke_test/src/smoke_test build-bin/smoke_test
 
 #--------------------------------------------------------------------------------------------------------------
