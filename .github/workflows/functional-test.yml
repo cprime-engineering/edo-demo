@@ -4,8 +4,8 @@ on:
   push:
     branches: ["main"]
 jobs:
-  test:
-    name: Test
+  functional-test:
+    name: Functional Test
     runs-on: ubuntu-latest
     permissions:
       actions: read
@@ -14,6 +14,5 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Initialize CodeQL
-      - name: Build
+      - name: Bazel Test
         run: ./bazelisk --bazelrc=.bazel/bazelrc/gh.workflow.bazelrc test ...
