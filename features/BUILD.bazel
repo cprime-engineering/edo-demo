@@ -1,0 +1,10 @@
+load("bdd.bzl", "bdd_test")
+
+[bdd_test(
+    name = filename[:filename.rfind(".feature")],
+    main = filename,
+    steps = glob(["steps/*.py"]),
+    deps = [
+        "@smoke_test//:smoke_test_library",
+    ],
+) for filename in glob(["*.feature"])]
