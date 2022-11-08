@@ -88,3 +88,5 @@ Creation of architecural decision records relating to this repo is automated usi
 ## License
 
 This code is released under the MIT License. Please see [LICENSE](/LICENSE) and [NOTICE](/NOTICE) for more details.
+
+<img src=".assets/i4-embedded-crop.jpg"/>
