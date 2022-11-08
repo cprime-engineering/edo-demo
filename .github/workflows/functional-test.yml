@@ -1,0 +1,19 @@
+---
+name: Functional Test
+on:
+  push:
+    branches: ["main"]
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Initialize CodeQL
+      - name: Build
+        run: ./bazelisk --bazelrc=.bazel/bazelrc/gh.workflow.bazelrc test ...
