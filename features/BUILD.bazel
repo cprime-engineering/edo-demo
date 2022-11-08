@@ -1,4 +1,4 @@
-load("bdd.bzl", "bdd_test")
+load("//.bazel/python/bdd:bdd.bzl", "bdd_test")
 
 [bdd_test(
     name = filename[:filename.rfind(".feature")],
