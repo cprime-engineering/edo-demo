@@ -56,21 +56,3 @@ http_archive(
 load("@pybind11_bazel//:python_configure.bzl", "python_configure")
 
 python_configure(name = "local_config_python")
-
-#--------------------------------------------------------------------------------------------------------------
-# Local repositories
-#--------------------------------------------------------------------------------------------------------------
-
-# apps --------------------------------------------------------------------------------------------------------
-
-new_local_repository(
-    name = "smoke_test",
-    build_file = "cpp/apps/smoke_test/src/BUILD.bazel",
-    path = "cpp/apps/smoke_test/src",
-)
-
-new_local_repository(
-    name = "smoke_test_bdd",
-    build_file = "cpp/apps/smoke_test/bdd/BUILD.bazel",
-    path = "cpp/apps/smoke_test/bdd",
-)

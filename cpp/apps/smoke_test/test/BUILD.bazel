@@ -5,6 +5,6 @@ cc_test(
     visibility = ["//visibility:public"],
     deps = [
         "@com_google_googletest//:gtest_main",
-        "@smoke_test//:smoke_test_library",
+        "//cpp/apps/smoke_test/src:smoke_test_library",
     ],
 )
