@@ -61,3 +61,9 @@ new_local_repository(
     build_file = "cpp/apps/smoke_test/src/BUILD.bazel",
     path = "cpp/apps/smoke_test/src",
 )
+
+new_local_repository(
+    name = "smoke_test_bdd",
+    build_file = "cpp/apps/smoke_test/bdd/BUILD.bazel",
+    path = "cpp/apps/smoke_test/bdd",
+)

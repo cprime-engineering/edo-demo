@@ -5,6 +5,6 @@ load("bdd.bzl", "bdd_test")
     main = filename,
     steps = glob(["steps/*.py"]),
     deps = [
-        "@smoke_test//:smoke_test_library",
+        "@smoke_test_bdd//:smoke_test_bdd.so",
     ],
 ) for filename in glob(["*.feature"])]
