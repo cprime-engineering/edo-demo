@@ -24,7 +24,7 @@ docker/edo_demo_test/build: docker/edo_demo_release/build
 #--------------------------------------------------------------------------------------------------------------
 # Test the edo_demo_test docker image
 #--------------------------------------------------------------------------------------------------------------
-docker/edo_demo_test/test: bazel/test behave/test docker/edo_demo_test/build
+docker/edo_demo_test/test: bazel/test docker/edo_demo_test/build
 	docker run edo_demo_test:0.0.0
 
 #--------------------------------------------------------------------------------------------------------------
