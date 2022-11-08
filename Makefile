@@ -12,7 +12,7 @@
 export BUILD_PATH ?= $(shell 'pwd')
 
 #--------------------------------------------------------------------------------------------------------------
-# import make sub directories
+# import make sub-directories
 #--------------------------------------------------------------------------------------------------------------
 include $(BUILD_PATH)/.make/*/Makefile
 include $(BUILD_PATH)/.make/**/*/Makefile
