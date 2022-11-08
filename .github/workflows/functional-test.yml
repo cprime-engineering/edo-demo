@@ -14,5 +14,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+      - name: Install behave
+        run: pip install behave
       - name: Bazel Test
         run: ./bazelisk --bazelrc=.bazel/bazelrc/gh.workflow.bazelrc test ...
