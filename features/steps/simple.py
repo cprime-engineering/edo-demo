@@ -1,9 +1,35 @@
 from behave import *
 
+import os
 import sys
-sys.path.append("/workspaces/edo-demo/bazel-bin/cpp/apps/smoke_test/bdd")
+
+workspace_dir =os.environ['WORKSPACE_DIR']
+sys.path.append(workspace_dir  + "/bazel-bin/cpp/apps/smoke_test/bdd")
+
 from smoke_test_bdd import MessageClass
 
+#################################################################################
+# feature : showing off behave
+#################################################################################
+
+#--------------------------------------------------------------------------------
+# Background : we want to show off behave
+#--------------------------------------------------------------------------------
+@given(u'We are working on a software project name "edo-dewmo"')
+def step_impl(context):
+    pass
+
+@given(u'we need to demonstrate python "behave"')
+def step_impl(context):
+    pass
+
+@given(u'that demonstration needs to wrap "c++" in python "behave"')
+def step_impl(context):
+    pass
+
+#--------------------------------------------------------------------------------
+# scenario: run a simple test
+#--------------------------------------------------------------------------------
 @given('we have behave installed')
 def step_impl(context):
     pass
