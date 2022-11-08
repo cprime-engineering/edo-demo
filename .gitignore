@@ -4,4 +4,4 @@ bazel-comms
 bazel-out
 bazel-testlogs
 bazel-edo-demo
-build
+build-bin

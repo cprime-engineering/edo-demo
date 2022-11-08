@@ -29,8 +29,8 @@ bazel/test:
 #--------------------------------------------------------------------------------------------------------------
 bazel/build:
 	./bazelisk --bazelrc=.codespace.bazelrc build ...
-	if [ -d "build" ]; then rm -Rf build; fi && mkdir build
-	cp bazel-bin/cpp/apps/smoke_test/src/smoke_test build/smoke_test
+	if [ -d "build-bin" ]; then rm -Rf build; fi && mkdir build-bin
+	cp bazel-bin/cpp/apps/smoke_test/src/smoke_test build-bin/smoke_test
 
 #--------------------------------------------------------------------------------------------------------------
 # bazel version
