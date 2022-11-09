@@ -24,7 +24,7 @@ These robots will be capable of receiving commands via the MQTT protocol, acting
 
 The robots will interact with industrial components within the environment, sending and receiving commands to and from equipment such as electric pumps and environmental sensors.
 
-All software must be deployed to the robots and staged environment using CICD and tested for quality, security, and functionality.
+All software must be deployed to the robots and staged environment using CICD and will be tested for quality, security, and functionality.
 
 ## Project Management
 
