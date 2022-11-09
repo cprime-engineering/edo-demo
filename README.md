@@ -19,6 +19,8 @@ Comprehensive documentation for this repo can be found in the [github pages](htt
 
 <img src=".assets/rviz_animation.gif" style="display: inline" width="400" />
 
+Create a swarm of 3 autonomous robots based upon the open source robot [Spotmicro](https://www.thingiverse.com/thing:3445283).
+
 
 ## Project Management
 
