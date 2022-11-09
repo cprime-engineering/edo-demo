@@ -17,9 +17,9 @@ Comprehensive documentation for this repo can be found in the [github pages](htt
 
 ## Project Brief
 
-<a href="https://cprime.com/" target="_blank">
-<img src=".assets/rviz_animation.gif" style="  display: block; margin-left: auto; margin-right: auto;" />
-</a>
+<div style="text-align:center">
+<img src=".assets/rviz_animation.gif"/>
+</div>
 
 ## Project Management
 
