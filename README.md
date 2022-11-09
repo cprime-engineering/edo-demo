@@ -17,7 +17,7 @@ Comprehensive documentation for this repo can be found in the [github pages](htt
 
 ## Project Brief
 
-<div style="text-align:center">
+<div style="text-align:center;">
 <img src=".assets/rviz_animation.gif"/>
 </div>
 
