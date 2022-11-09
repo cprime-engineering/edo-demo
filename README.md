@@ -17,7 +17,7 @@ Comprehensive documentation for this repo can be found in the [github pages](htt
 
 ## Project Brief
 
-<img src=".assets/rviz_animation.gif" style="display: inline" width="150" />
+<img src=".assets/rviz_animation.gif" style="display: inline" width="400" />
 
 
 ## Project Management
