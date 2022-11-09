@@ -19,4 +19,4 @@ jobs:
       - name: pwd
         run: pwd
       - name: Bazel Test
-        run: ./bazelisk --bazelrc=.bazel/bazelrc/gh.workflow.bazelrc test ...
+        run: make bazel/test
