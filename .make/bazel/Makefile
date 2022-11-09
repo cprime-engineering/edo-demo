@@ -25,12 +25,22 @@ bazel/test:
 	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc test ...
 
 #--------------------------------------------------------------------------------------------------------------
-# bazel build
+# bazel build X86-64
 #--------------------------------------------------------------------------------------------------------------
-bazel/build:
+bazel/build/X86-64:
 	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc build ...
 	if [ -d "build-bin" ]; then rm -Rf build-bin; fi && mkdir build-bin
 	cp bazel-bin/cpp/apps/smoke_test/src/smoke_test build-bin/smoke_test
+	readelf -h bazel-bin/cpp/apps/smoke_test/src/smoke_test | fgrep Machine:
+
+#--------------------------------------------------------------------------------------------------------------
+# bazel build AArch64
+#--------------------------------------------------------------------------------------------------------------
+bazel/build/AArch64: bazel/clean
+	./bazelisk build --config=aarch64 //cpp/apps/smoke_test/src:smoke_test
+	if [ -d "build-bin" ]; then rm -Rf build-bin; fi && mkdir build-bin
+	cp bazel-bin/cpp/apps/smoke_test/src/smoke_test build-bin/smoke_test
+	readelf -h bazel-bin/cpp/apps/smoke_test/src/smoke_test | fgrep Machine:
 
 #--------------------------------------------------------------------------------------------------------------
 # bazel version
