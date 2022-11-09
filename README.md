@@ -17,7 +17,7 @@ Comprehensive documentation for this repo can be found in the [github pages](htt
 
 ## Project Brief
 
-<img src=".assets/rviz_animation.gif" title="Astrobee" align="right" style="display: inline" width="400" />
+<img src=".assets/rviz_animation.gif" title="Astrobee" align="left" style="display: inline" width="400" />
 
 Create a swarm of 3 autonomous robots based upon the open source robot [Spotmicro](https://www.thingiverse.com/thing:3445283).
 
