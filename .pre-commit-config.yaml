@@ -4,15 +4,20 @@ repos:
     rev: v2.4.0
     hooks:
       - id: check-yaml
+        exclude: .devcontainer
       - id: end-of-file-fixer
+        exclude: .devcontainer
       - id: trailing-whitespace
-      - id: check-case-conflict
+        exclude: .devcontainer
       - id: check-merge-conflict
+        exclude: .devcontainer
       - id: check-executables-have-shebangs
+        exclude: .devcontainer
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.20.0
     hooks:
       - id: yamllint
+        exclude: .devcontainer
   - repo: https://github.com/pryorda/dockerfilelint-precommit-hooks
     rev: v0.1.0
     hooks:

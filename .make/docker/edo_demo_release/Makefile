@@ -16,7 +16,7 @@
 #--------------------------------------------------------------------------------------------------------------
 # Build the edo_demo_release docker image
 #--------------------------------------------------------------------------------------------------------------
-docker/edo_demo_release/build: docker/edo_demo_base/build bazel/build
+docker/edo_demo_release/build: bazel/build/X86-64 docker/edo_demo_base/build
 	docker build -f docker/edo_demo_release/edo_demo_release.Dockerfile -t edo_demo_release:0.0.0 .
 
 #--------------------------------------------------------------------------------------------------------------

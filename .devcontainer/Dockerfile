@@ -9,6 +9,9 @@ COPY home/codespace/.bashrc /home/codespace/.bashrc
 # copy toolkit directory --------------------------------------------------------------------------------------
 COPY opt/toolkit /opt/toolkit
 
+# copy aarch64 compile toolchain ------------------------------------------------------------------------------
+COPY opt/aarch64-linux-gnu /opt/aarch64-linux-gnu
+
 # As codespace user -------------------------------------------------------------------------------------------
 USER codespace
 
