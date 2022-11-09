@@ -15,6 +15,12 @@
 
 Comprehensive documentation for this repo can be found in the [github pages](https://cprime-labs.github.io/edo-demo/) website hosted within this repo.
 
+## Project Brief
+
+<a href="https://cprime.com/" target="_blank">
+<img src=".assets/rviz_animation.gif" align="center" />
+</a>
+
 ## Project Management
 
 Tasks and issues that relate to development of this repo can be found in this repo's [project board](https://github.com/orgs/cprime-labs/projects/2/views/1).
