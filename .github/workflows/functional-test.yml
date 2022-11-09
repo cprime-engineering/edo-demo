@@ -18,5 +18,11 @@ jobs:
         run: pip install behave
       - name: pwd
         run: pwd
-      - name: Bazel Test
-        run: make bazel/test
+      - name: Unit Tests
+        run: >
+          ./bazelisk --bazelrc=.bazel/bazelrc/gh.workflow.bazelrc
+          test //cpp/...
+      - name: BDD Tests
+        run: >
+          ./bazelisk --bazelrc=.bazel/bazelrc/gh.workflow.bazelrc
+          test //features/...
