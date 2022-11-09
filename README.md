@@ -19,7 +19,7 @@ Comprehensive documentation for this repo can be found in the [github pages](htt
 
 <img src=".assets/rviz_animation.gif" title="Spotmicro"/>
 
-Create a swarm of 3 autonomous robots based on the open-source robot[Spotmicro](https://www.thingiverse.com/thing:3445283).
+Create a swarm of 3 autonomous robots based on the open-source robot [Spotmicro](https://www.thingiverse.com/thing:3445283).
 These robots will be capable of receiving commands via the MQTT protocol, acting as independent observers in a staged industrial environment.
 
 The robots will interact with industrial components within the environment, sending and receiving commands to and from equipment such as electric pumps and environmental sensors.
