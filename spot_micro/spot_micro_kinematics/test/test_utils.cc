@@ -1,9 +1,9 @@
 #include <iostream>
 
-#include <eigen3/Eigen/Geometry>
+#include "Eigen/Geometry"
 #include <gtest/gtest.h>
 
-#include "../include/utils.h"
+#include "include/utils.h"
 
 using namespace std;
 using namespace Eigen;
