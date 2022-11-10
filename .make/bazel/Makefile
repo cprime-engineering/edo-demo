@@ -72,8 +72,7 @@ bazel/lint:
 	buildifier --lint=fix cpp/apps/smoke_test/src/BUILD
 	buildifier --lint=fix cpp/apps/smoke_test/test/BUILD
 	buildifier --lint=fix features/BUILD
-	buildifier --lint=fix spot_micro/spot_micro_kinematics/src/BUILD
-	buildifier --lint=fix spot_micro/spot_micro_kinematics/test/BUILD
+	buildifier --lint=fix spot_micro/spot_micro_kinematics/BUILD
 
 #--------------------------------------------------------------------------------------------------------------
 #

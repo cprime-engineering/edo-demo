@@ -1,8 +1,8 @@
 #include <eigen3/Eigen/Geometry>
 
-#include "../include/utils.h"
-#include "../include/spot_micro_leg.h"
-#include "../include/spot_micro_kinematics.h"
+#include "include/utils.h"
+#include "include/spot_micro_leg.h"
+#include "include/spot_micro_kinematics.h"
 
 using namespace Eigen;
 
