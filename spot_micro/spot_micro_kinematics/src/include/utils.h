@@ -1,6 +1,6 @@
 #pragma once // So header is only included once
 
-#include <eigen3/Eigen/Geometry>
+#include "Eigen/Geometry"
 
 namespace smk
 {

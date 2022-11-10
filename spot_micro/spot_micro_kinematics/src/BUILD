@@ -17,4 +17,7 @@ cc_library(
         "include",
     ],
     visibility = ["//visibility:public"],
+    deps = [
+        "@eigen3//:eigen3",
+    ],
 )

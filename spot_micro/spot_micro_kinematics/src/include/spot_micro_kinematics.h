@@ -1,6 +1,6 @@
 #pragma once
 
-#include <eigen3/Eigen/Geometry>
+#include "Eigen/Geometry"
 
 #include "utils.h"
 #include "spot_micro_leg.h"

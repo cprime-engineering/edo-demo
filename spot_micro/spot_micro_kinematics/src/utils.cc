@@ -3,7 +3,7 @@
 #include <iostream>
 #include <cmath>
 
-#include <eigen3/Eigen/Geometry>
+#include "Eigen/Geometry"
 
 using namespace Eigen;
 

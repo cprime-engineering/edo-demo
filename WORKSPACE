@@ -44,6 +44,15 @@ http_archive(
     urls = ["https://github.com/pybind/pybind11/archive/v2.7.1.tar.gz"],
 )
 
+http_archive(
+  name = "eigen3",
+  url = "https://gitlab.com/libeigen/eigen/-/archive/3.3.5/eigen-3.3.5.zip",
+  strip_prefix = "eigen-3.3.5",
+  sha256 = "0e7aeece6c8874146c2a4addc437eebdf1ec4026680270f00e76705c8186f0b5",
+  build_file = "@//.bazel/third_party:eigen3.BUILD",
+)
+
+
 load("@pybind11_bazel//:python_configure.bzl", "python_configure")
 
 python_configure(name = "local_config_python")
