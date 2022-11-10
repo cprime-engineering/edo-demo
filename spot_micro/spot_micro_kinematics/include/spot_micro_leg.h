@@ -2,7 +2,7 @@
 
 #include <eigen3/Eigen/Geometry>
 
-#include "spot_micro_kinematics/utils.h"
+#include "utils.h"
 
 namespace smk
 {

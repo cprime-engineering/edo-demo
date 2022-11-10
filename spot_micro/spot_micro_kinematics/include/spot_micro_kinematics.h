@@ -2,8 +2,8 @@
 
 #include <eigen3/Eigen/Geometry>
 
-#include "spot_micro_kinematics/utils.h"
-#include "spot_micro_kinematics/spot_micro_leg.h"
+#include "utils.h"
+#include "spot_micro_leg.h"
 
 namespace smk
 { // Start smk namespace
