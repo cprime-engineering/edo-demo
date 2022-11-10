@@ -3,8 +3,9 @@
 
 def _bdd_test_impl(ctx):
     # Assemble the command to run.
-    bdd_tool = 'behave'
-    default_args = '--no-capture --no-capture-stderr --no-logcapture'
+    bdd_tool = "behave"
+    default_args = "--no-capture --no-capture-stderr --no-logcapture"
+
     # Optional arguments are passed either
     #  explicitly as --test_arg=--foo="bar bar" (no space in between)
     #  or implicitly via ctx.attr.args
@@ -13,9 +14,14 @@ def _bdd_test_impl(ctx):
     feature_file = ctx.file.main.basename
     features_path = ctx.label.package
 
-    command = ' '.join([bdd_tool, default_args, features_path, '--include', feature_file])
-    command = ' '.join([
-        bdd_tool, features_path, '--include', feature_file, default_args, optional_args
+    command = " ".join([bdd_tool, default_args, features_path, "--include", feature_file])
+    command = " ".join([
+        bdd_tool,
+        features_path,
+        "--include",
+        feature_file,
+        default_args,
+        optional_args,
     ])
 
     # Wrap an executable around the command.

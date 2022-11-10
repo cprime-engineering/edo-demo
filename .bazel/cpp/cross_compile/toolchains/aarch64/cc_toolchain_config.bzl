@@ -1,10 +1,12 @@
 # toolchain/cc_toolchain_config.bzl:
 # https://docs.bazel.build/versions/main/tutorial/cc-toolchain-config.html
-load("@bazel_tools//tools/cpp:cc_toolchain_config_lib.bzl",
-     "feature",
-     "flag_group",
-     "flag_set",
-     "tool_path")
+load(
+    "@bazel_tools//tools/cpp:cc_toolchain_config_lib.bzl",
+    "feature",
+    "flag_group",
+    "flag_set",
+    "tool_path",
+)
 load("@bazel_tools//tools/build_defs/cc:action_names.bzl", "ACTION_NAMES")
 
 all_link_actions = [
@@ -50,22 +52,22 @@ def _impl(ctx):
     ]
 
     features = [
-           feature(
-               name = "default_linker_flags",
-               enabled = True,
-               flag_sets = [
-                   flag_set(
-                       actions = all_link_actions,
-                       flag_groups = ([
-                           flag_group(
-                               flags = [
-                                   "-lstdc++",
-                               ],
-                           ),
-                       ]),
-                   ),
-               ],
-           ),
+        feature(
+            name = "default_linker_flags",
+            enabled = True,
+            flag_sets = [
+                flag_set(
+                    actions = all_link_actions,
+                    flag_groups = ([
+                        flag_group(
+                            flags = [
+                                "-lstdc++",
+                            ],
+                        ),
+                    ]),
+                ),
+            ],
+        ),
     ]
 
     return cc_common.create_cc_toolchain_config_info(
@@ -80,9 +82,9 @@ def _impl(ctx):
         abi_libc_version = "unknown",
         tool_paths = tool_paths,
         cxx_builtin_include_directories = [
-	    "/opt/aarch64-linux-gnu/aarch64-linux-gnu/libc/usr/include",
-	    "/opt/aarch64-linux-gnu/aarch64-linux-gnu/include/c++",
-	    "/opt/aarch64-linux-gnu/lib/gcc/aarch64-linux-gnu/7.2.1/include",
+            "/opt/aarch64-linux-gnu/aarch64-linux-gnu/libc/usr/include",
+            "/opt/aarch64-linux-gnu/aarch64-linux-gnu/include/c++",
+            "/opt/aarch64-linux-gnu/lib/gcc/aarch64-linux-gnu/7.2.1/include",
         ],
         features = features,
     )

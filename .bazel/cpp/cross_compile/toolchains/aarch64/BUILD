@@ -17,14 +17,14 @@ cc_toolchain_suite(
 filegroup(name = "empty")
 
 cc_toolchain(
-   name = "linaro_aarch64_toolchain",
-   toolchain_identifier = "asmjs-toolchain",
-   toolchain_config = ":linaro_toolchain_config",
-   all_files = ":empty",
-   compiler_files = ":empty",
-   dwp_files = ":empty",
-   linker_files = ":empty",
-   objcopy_files = ":empty",
-   strip_files = ":empty",
-   supports_param_files = 0,
+    name = "linaro_aarch64_toolchain",
+    all_files = ":empty",
+    compiler_files = ":empty",
+    dwp_files = ":empty",
+    linker_files = ":empty",
+    objcopy_files = ":empty",
+    strip_files = ":empty",
+    supports_param_files = 0,
+    toolchain_config = ":linaro_toolchain_config",
+    toolchain_identifier = "asmjs-toolchain",
 )

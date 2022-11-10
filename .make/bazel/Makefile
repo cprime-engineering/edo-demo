@@ -54,10 +54,16 @@ bazel/version:
 # bazel lint
 #--------------------------------------------------------------------------------------------------------------
 bazel/lint:
-	buildifier --lint=fix WORKSPACE.bazel
-	buildifier --lint=fix cpp/apps/smoke_test/src/BUILD.bazel
-	buildifier --lint=fix cpp/apps/smoke_test/test/BUILD.bazel
-	buildifier --lint=fix cpp/apps/smoke_test/bdd/BUILD.bazel
+	buildifier --lint=fix WORKSPACE
+	buildifier --lint=fix BUILD
+	buildifier --lint=fix .bazel/cpp/cross_compile/toolchains/aarch64/BUILD
+	buildifier --lint=fix .bazel/cpp/cross_compile/toolchains/aarch64/cc_toolchain_config.bzl
+	buildifier --lint=fix .bazel/python/bdd/bdd.bzl
+	buildifier --lint=fix .bazel/python/bdd/BUILD
+	buildifier --lint=fix cpp/apps/smoke_test/bdd/BUILD
+	buildifier --lint=fix cpp/apps/smoke_test/src/BUILD
+	buildifier --lint=fix cpp/apps/smoke_test/test/BUILD
+	buildifier --lint=fix features/BUILD
 
 #--------------------------------------------------------------------------------------------------------------
 #
