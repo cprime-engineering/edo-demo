@@ -52,4 +52,19 @@ RUN curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh |
 RUN git clone https://github.com/npryce/adr-tools.git ~/adr-tools \
 	&& cd ~/adr-tools && git checkout tags/3.0.0
 
+# As root user ------------------------------------------------------------------------------------------------
+USER root
+
+# Update apt-get ----------------------------------------------------------------------------------------------
+RUN apt-get update
+
+# Install lcov ------------------------------------------------------------------------------------------------
+RUN pwd \
+  && apt-get update \
+  && apt-get -y install lcov --no-install-recommends
+
+# As codespace user -------------------------------------------------------------------------------------------
+USER codespace
+
+# Copy adr-tools template -------------------------------------------------------------------------------------
 COPY home/codespace/adr-tools/src/template.md /home/codespace/adr-tools/src/template.md

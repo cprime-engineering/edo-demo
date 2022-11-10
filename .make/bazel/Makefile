@@ -26,6 +26,14 @@ bazel/test:
 	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc test //features/...
 
 #--------------------------------------------------------------------------------------------------------------
+# bazel coverage
+#--------------------------------------------------------------------------------------------------------------
+bazel/coverage:
+	./bazelisk coverage --java_runtime_version=remotejdk_11 -s --instrument_test_targets --experimental_cc_coverage --combined_report=lcov --coverage_report_generator=@bazel_tools//tools/test/CoverageOutputGenerator/java/com/google/devtools/coverageoutputgenerator:Main //cpp/...
+	genhtml bazel-testlogs/cpp/apps/smoke_test/test/smoke_test_test/coverage.dat --output-directory bazel-coverage/smoke_test_test
+
+
+#--------------------------------------------------------------------------------------------------------------
 # bazel build X86-64
 #--------------------------------------------------------------------------------------------------------------
 bazel/build/X86-64:
