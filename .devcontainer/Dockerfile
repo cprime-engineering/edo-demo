@@ -95,7 +95,8 @@ RUN pwd \
 
 # Install nodejs ----------------------------------------------------------------------------------------------
 RUN pwd \
-  && curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - \
+  && curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash - \
+  && apt-get update \
   && apt-get -y install nodejs --no-install-recommends
 
 # Install ruby ------------------------------------------------------------------------------------------------
@@ -116,8 +117,8 @@ RUN pwd \
 
 # Install npm -------------------------------------------------------------------------------------------------
 #RUN pwd \
-#  && apt-get -y install npm --no-install-recommends \
-#  && npm install -g npm@9.1.1
+#&& apt-get -y install npm --no-install-recommends \
+#&& npm install -g npm@9.1.1
 
 # Install pre-commit ------------------------------------------------------------------------------------------
 RUN pip install pre-commit
