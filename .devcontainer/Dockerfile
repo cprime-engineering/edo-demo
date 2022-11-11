@@ -38,7 +38,6 @@ VOLUME [ "/var/lib/docker" ]
 ENTRYPOINT [ "/usr/local/share/docker-init.sh" ]
 CMD [ "sleep", "infinity" ]
 
-
 # copy codespace .bashrc --------------------------------------------------------------------------------------
 COPY home/vscode/.bashrc /home/vscode/.bashrc
 
@@ -51,6 +50,38 @@ RUN apt-get update
 # software-properties-common ----------------------------------------------------------------------------------
 RUN pwd \
   && apt-get -y install software-properties-common --no-install-recommends
+
+# install build essential -------------------------------------------------------------------------------------
+RUN pwd \
+  && apt-get -y install build-essential --no-install-recommends
+
+# install cmake -----------------------------------------------------------------------------------------------
+RUN pwd \
+  && apt-get -y install cmake --no-install-recommends
+
+# install unzip -----------------------------------------------------------------------------------------------
+RUN pwd \
+  && apt-get -y install unzip --no-install-recommends
+
+# install clang-tidy ------------------------------------------------------------------------------------------
+RUN pwd \
+  && apt-get install -y clang-tidy --no-install-recommends
+
+# install clang-format ----------------------------------------------------------------------------------------
+RUN pwd \
+  && apt-get install -y clang-format --no-install-recommends
+
+# install uncrustify ------------------------------------------------------------------------------------------
+RUN pwd \
+  && apt-get install -y uncrustify --no-install-recommends
+
+# install cppcheck --------------------------------------------------------------------------------------------
+RUN pwd \
+  && apt-get install -y cppcheck --no-install-recommends
+
+# install include-what-you-use --------------------------------------------------------------------------------
+RUN pwd \
+  && apt-get install -y iwyu --no-install-recommends
 
 # Install pip3 ------------------------------------------------------------------------------------------------
 RUN pwd \
@@ -78,6 +109,10 @@ RUN pwd \
 # Install lcov ------------------------------------------------------------------------------------------------
 RUN pwd \
   && apt-get -y install lcov --no-install-recommends
+
+# install bash-completion -------------------------------------------------------------------------------------
+RUN pwd \
+  && apt-get -y install bash-completion --no-install-recommends
 
 # Install npm -------------------------------------------------------------------------------------------------
 #RUN pwd \
