@@ -1,7 +1,7 @@
 filegroup(
-    name = "build_all",
+    name = "build_spot",
     srcs = [
-        "//cpp/apps/smoke_test/src:smoke_test",
-        "//cpp/apps/smoke_test/src:smoke_test_library",
+        "//spot_micro/cpp/apps/smoke_test/src:smoke_test",
+        "//spot_micro/cpp/apps/smoke_test/src:smoke_test_library",
     ],
 )

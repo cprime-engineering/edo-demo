@@ -4,7 +4,7 @@ cc_test(
     srcs = ["smoke_test_test.cc"],
     visibility = ["//visibility:public"],
     deps = [
-        "//cpp/apps/smoke_test/src:smoke_test_library",
+        "//spot_micro/cpp/apps/smoke_test/src:smoke_test_library",
         "@com_google_googletest//:gtest_main",
     ],
 )

@@ -6,6 +6,6 @@ pybind_extension(
     includes = ["."],
     visibility = ["//visibility:public"],
     deps = [
-        "//cpp/apps/smoke_test/src:smoke_test_library",
+        "//spot_micro/cpp/apps/smoke_test/src:smoke_test_library",
     ],
 )
