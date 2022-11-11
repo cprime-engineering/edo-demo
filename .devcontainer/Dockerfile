@@ -95,7 +95,7 @@ RUN pwd \
 
 # Install nodejs ----------------------------------------------------------------------------------------------
 RUN pwd \
-  && curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash - \
+  && curl -sL https://deb.nodesource.com/setup_19.x | sudo -E bash - \
   && apt-get update \
   && apt-get -y install nodejs --no-install-recommends
 
