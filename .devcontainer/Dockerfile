@@ -99,6 +99,11 @@ RUN pwd \
   && apt-get update \
   && apt-get -y install nodejs --no-install-recommends
 
+# Install npm -------------------------------------------------------------------------------------------------
+#RUN pwd \
+#&& apt-get -y install npm --no-install-recommends \ #wont install as standard package expects older version of nodjs, need to fix
+#&& npm install -g npm@9.1.1 #wrong version needs to update to 19
+
 # Install ruby ------------------------------------------------------------------------------------------------
 RUN pwd \
   && apt-get -y install ruby-full --no-install-recommends
@@ -114,11 +119,6 @@ RUN pwd \
 # install bash-completion -------------------------------------------------------------------------------------
 RUN pwd \
   && apt-get -y install bash-completion --no-install-recommends
-
-# Install npm -------------------------------------------------------------------------------------------------
-#RUN pwd \
-#&& apt-get -y install npm --no-install-recommends \
-#&& npm install -g npm@9.1.1
 
 # Install pre-commit ------------------------------------------------------------------------------------------
 RUN pip install pre-commit
