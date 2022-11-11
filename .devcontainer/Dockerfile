@@ -63,8 +63,5 @@ RUN pwd \
   && apt-get update \
   && apt-get -y install lcov --no-install-recommends
 
-# As codespace user -------------------------------------------------------------------------------------------
-USER codespace
-
 # Copy adr-tools template -------------------------------------------------------------------------------------
 COPY home/codespace/adr-tools/src/template.md /home/codespace/adr-tools/src/template.md
