@@ -28,7 +28,8 @@
 				"alexkrechik.cucumberautocomplete",
 				"ms-python.python",
 				"bazelbuild.vscode-bazel",
-				"ms-vscode.cpptools-extension-pack"
+				"ms-vscode.cpptools-extension-pack",
+				"stackbuild.bazel-stack-vscode"
 			]
 		}
 	},

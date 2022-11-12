@@ -16,7 +16,7 @@
 #--------------------------------------------------------------------------------------------------------------
 # Build the wind_river_release docker image
 #--------------------------------------------------------------------------------------------------------------
-docker/wind_river_release/build: bazel/build/X86-64 docker/wind_river_base/build
+docker/wind_river_release/build: bazel/build docker/wind_river_base/build
 	docker build -f docker/wind_river/wind_river_release/wind_river_release.Dockerfile -t wind_river_release:0.0.0 .
 
 #--------------------------------------------------------------------------------------------------------------

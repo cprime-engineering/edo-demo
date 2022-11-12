@@ -36,17 +36,8 @@ bazel/coverage:
 #--------------------------------------------------------------------------------------------------------------
 # bazel build X86-64
 #--------------------------------------------------------------------------------------------------------------
-bazel/build/X86-64:
+bazel/build:
 	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc build //:build_spot
-	if [ -d "build-bin" ]; then rm -Rf build-bin; fi && mkdir build-bin
-	cp bazel-bin/spot_micro/cpp/apps/smoke_test/src/smoke_test build-bin/smoke_test
-	readelf -h bazel-bin/spot_micro/cpp/apps/smoke_test/src/smoke_test | fgrep Machine:
-
-#--------------------------------------------------------------------------------------------------------------
-# bazel build AArch64
-#--------------------------------------------------------------------------------------------------------------
-bazel/build/AArch64:
-	./bazelisk build --config=aarch64 //:build_spot
 	if [ -d "build-bin" ]; then rm -Rf build-bin; fi && mkdir build-bin
 	cp bazel-bin/spot_micro/cpp/apps/smoke_test/src/smoke_test build-bin/smoke_test
 	readelf -h bazel-bin/spot_micro/cpp/apps/smoke_test/src/smoke_test | fgrep Machine:
