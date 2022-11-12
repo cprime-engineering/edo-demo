@@ -1,8 +1,8 @@
 """Tests for the spot micro kinematics module"""
 
 import unittest
-from .. import spot_micro_kinematics
-from .. import transformations
+from spot_micro.python.lib.spot_micro_kinematics.utilities import spot_micro_kinematics
+from spot_micro.python.lib.spot_micro_kinematics.utilities import transformations
 import numpy as np
 from math import cos, sin, pi
 

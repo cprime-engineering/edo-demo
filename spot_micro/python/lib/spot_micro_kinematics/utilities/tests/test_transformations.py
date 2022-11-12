@@ -1,6 +1,6 @@
 """Tests for the transformations module"""
 
-from .. import transformations
+from spot_micro.python.lib.spot_micro_kinematics.utilities import transformations
 import unittest
 import math
 import numpy as np
