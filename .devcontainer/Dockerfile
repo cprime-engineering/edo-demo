@@ -89,20 +89,14 @@ RUN pwd \
 
 # Install golang ----------------------------------------------------------------------------------------------
 RUN pwd \
-  && add-apt-repository ppa:longsleep/golang-backports -y \
-  && apt-get update \
-  && apt-get -y install golang-1.19 --no-install-recommends
+  && apt-get -y install golang --no-install-recommends
 
 # Install nodejs ----------------------------------------------------------------------------------------------
 RUN pwd \
   && curl -sL https://deb.nodesource.com/setup_19.x | sudo -E bash - \
   && apt-get update \
-  && apt-get -y install nodejs --no-install-recommends
-
-# Install npm -------------------------------------------------------------------------------------------------
-#RUN pwd \
-#&& apt-get -y install npm --no-install-recommends \ #wont install as standard package expects older version of nodjs, need to fix
-#&& npm install -g npm@9.1.1 #wrong version needs to update to 19
+  && apt-get -y install nodejs --no-install-recommends \
+  && npm install -g npm@9.1.1
 
 # Install ruby ------------------------------------------------------------------------------------------------
 RUN pwd \
@@ -133,29 +127,29 @@ RUN pip install behave
 RUN pip install pybind11
 
 # Install snyk ------------------------------------------------------------------------------------------------
-#RUN npm install snyk -g
+RUN npm install snyk -g
 
 # Install ember-cli -------------------------------------------------------------------------------------------
-#RUN npm install -g ember-cli
+RUN npm install -g ember-cli
 
 # Install github_changelog_generator --------------------------------------------------------------------------
-#RUN gem install github_changelog_generator
+RUN gem install github_changelog_generator
 
 # Install bazel buildifier -------------------------------------------------------------------------------------
-#RUN go install github.com/bazelbuild/buildtools/buildifier@latest
+RUN go install github.com/bazelbuild/buildtools/buildifier@latest
 
 # Install bazel buildozer --------------------------------------------------------------------------------------
-#RUN go install github.com/bazelbuild/buildtools/buildozer@latest
+RUN go install github.com/bazelbuild/buildtools/buildozer@latest
 
 # Install grype -----------------------------------------------------------------------------------------------
-#RUN curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b ~/grype
+RUN curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b ~/grype
 
 # As vscode user ----------------------------------------------------------------------------------------------
-#USER vscode
+USER vscode
 
 # Install adr-tools -------------------------------------------------------------------------------------------
-#RUN git clone https://github.com/npryce/adr-tools.git /home/vscode/adr-tools \
-#&& cd /home/vscode/adr-tools && git checkout tags/3.0.0
+RUN git clone https://github.com/npryce/adr-tools.git /home/vscode/adr-tools \
+  && cd /home/vscode/adr-tools && git checkout tags/3.0.0
 
 # Copy adr-tools template -------------------------------------------------------------------------------------
-#COPY home/vscode/adr-tools/src/template.md /home/vscode/adr-tools/src/template.md
+COPY home/vscode/adr-tools/src/template.md /home/vscode/adr-tools/src/template.md
