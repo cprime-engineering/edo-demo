@@ -14,7 +14,7 @@ def _tpl(repository_ctx, tpl, substitutions = {}, out = None):
         out = tpl
     repository_ctx.template(
         out,
-        Label("//.bazel/third_party/pybind11/py:%s.tpl" % tpl),
+        Label("//.bazel/python/configure/py:%s.tpl" % tpl),
         substitutions,
     )
 
