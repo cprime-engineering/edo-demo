@@ -11,7 +11,24 @@
 		"vscode": {
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"ms-azuretools.vscode-docker"
+				"GitHub.vscode-pull-request-github",
+				"redhat.fabric8-analytics",
+				"eamodio.gitlens",
+				"esbenp.prettier-vscode",
+				"davidanson.vscode-markdownlint",
+				"ms-vscode.makefile-tools",
+				"github.copilot",
+				"vscjava.vscode-java-pack",
+				"ms-azuretools.vscode-docker",
+				"dotjoshjohnson.xml",
+				"vscjava.vscode-maven",
+				"pivotal.vscode-boot-dev-pack",
+				"mechatroner.rainbow-csv",
+				"golang.go",
+				"alexkrechik.cucumberautocomplete",
+				"ms-python.python",
+				"bazelbuild.vscode-bazel",
+				"ms-vscode.cpptools-extension-pack"
 			]
 		}
 	},
