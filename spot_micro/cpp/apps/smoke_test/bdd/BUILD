@@ -1,4 +1,4 @@
-load("@pybind11_bazel//:build_defs.bzl", "pybind_extension")
+load("//.bazel/third_party/pybind11:build_defs.bzl", "pybind_extension")
 
 pybind_extension(
     name = "smoke_test_bdd",

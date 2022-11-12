@@ -83,9 +83,9 @@ RUN pwd \
 RUN pwd \
   && apt-get install -y iwyu --no-install-recommends
 
-# Install pip3 ------------------------------------------------------------------------------------------------
+# Install python tools ----------------------------------------------------------------------------------------
 RUN pwd \
-  && apt-get -y install python3-venv python3-pip --no-install-recommends
+  && apt-get -y install python3-venv python3-pip python3-dev --no-install-recommends
 
 # Install golang ----------------------------------------------------------------------------------------------
 RUN pwd \

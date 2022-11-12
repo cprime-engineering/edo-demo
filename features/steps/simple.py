@@ -4,7 +4,7 @@ import os
 import sys
 
 workspace_dir =os.environ['WORKSPACE_DIR']
-sys.path.append(workspace_dir  + "/bazel-bin/cpp/apps/smoke_test/bdd")
+sys.path.append(workspace_dir  + "/bazel-bin/spot_micro/cpp/apps/smoke_test/bdd")
 
 from smoke_test_bdd import MessageClass
 
