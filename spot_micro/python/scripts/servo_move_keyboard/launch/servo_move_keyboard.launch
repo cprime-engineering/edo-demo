@@ -6,7 +6,7 @@
     <arg name="run_i2c_pwmboard" default="false"/>
 
     <!-- Defining the node and executable and publishing the output on terminal-->
-    <node name="servo_move_keyboard_node" pkg="servo_move_keyboard" type="servoMoveKeyboard.py" output="screen">
+    <node name="servo_move_keyboard_node" pkg="servo_move_keyboard" type="servo_move_keyboard.py" output="screen">
     </node>
 
     <!-- If run_i2c_pwmboard is true, also run the i2c_pwm_board node -->
