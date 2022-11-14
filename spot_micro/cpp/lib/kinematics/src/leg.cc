@@ -1,7 +1,7 @@
 #include "Eigen/Geometry"
 
 #include "include/utils.h"
-#include "include/spot_micro_leg.h"
+#include "include/leg.h"
 
 using namespace Eigen;
 

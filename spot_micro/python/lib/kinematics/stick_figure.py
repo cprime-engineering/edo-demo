@@ -2,7 +2,7 @@ import math
 from math import pi, sin, cos
 import matplotlib.pyplot as plt
 import numpy as np
-from .utilities import spot_micro_kinematics as smk
+from .utilities import kinematics as smk
 from .utilities import transformations
 
 d2r = pi/180

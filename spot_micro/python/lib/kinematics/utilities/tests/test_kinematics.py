@@ -1,8 +1,8 @@
 """Tests for the spot micro kinematics module"""
 
 import unittest
-from spot_micro.python.lib.spot_micro_kinematics.utilities import spot_micro_kinematics
-from spot_micro.python.lib.spot_micro_kinematics.utilities import transformations
+from spot_micro.python.lib.kinematics.utilities import kinematics
+from spot_micro.python.lib.kinematics.utilities import transformations
 import numpy as np
 from math import cos, sin, pi
 
@@ -18,7 +18,7 @@ class TestSpotMicroKinematics(unittest.TestCase):
         t_m = transformations.homog_transform(0,0,0,0,0,0)
         l = 2
         w = 3
-        t_rightback = spot_micro_kinematics.t_rightback(t_m,l,w)
+        t_rightback = kinematics.t_rightback(t_m,l,w)
 
         known_true_rot = np.array(
             [   [cos(pi/2),   0,  sin(pi/2),  -l/2],
@@ -44,7 +44,7 @@ class TestSpotMicroKinematics(unittest.TestCase):
         t_m = transformations.homog_transform(0,0,0,0,0,0)
         l = 2
         w = 3
-        t_rightfront = spot_micro_kinematics.t_rightfront(t_m,l,w)
+        t_rightfront = kinematics.t_rightfront(t_m,l,w)
 
         known_true_rot = np.array(
             [   [cos(pi/2),   0,  sin(pi/2),   l/2],
@@ -69,7 +69,7 @@ class TestSpotMicroKinematics(unittest.TestCase):
         t_m = transformations.homog_transform(0,0,0,0,0,0)
         l = 2
         w = 3
-        t_leftfront = spot_micro_kinematics.t_leftfront(t_m,l,w)
+        t_leftfront = kinematics.t_leftfront(t_m,l,w)
 
         known_true_rot = np.array(
             [   [cos(-pi/2),   0,  sin(-pi/2),   l/2],
@@ -94,7 +94,7 @@ class TestSpotMicroKinematics(unittest.TestCase):
         t_m = transformations.homog_transform(0,0,0,0,0,0)
         l = 2
         w = 3
-        t_leftback = spot_micro_kinematics.t_leftback(t_m,l,w)
+        t_leftback = kinematics.t_leftback(t_m,l,w)
 
         known_true_rot = np.array(
             [   [cos(-pi/2),   0,  sin(-pi/2),   -l/2],
@@ -115,7 +115,7 @@ class TestSpotMicroKinematics(unittest.TestCase):
 
         theta1 = 35*pi/180
         l1 = 0.4
-        t = spot_micro_kinematics.t_0_to_1(theta1,l1)
+        t = kinematics.t_0_to_1(theta1,l1)
 
         known_true = np.array(
             [   [cos(theta1),  -sin(theta1),             0,   -l1*cos(theta1)],
@@ -134,7 +134,7 @@ class TestSpotMicroKinematics(unittest.TestCase):
     def test_t_1_to_2(self):
         '''Test the homogeneous transformation of leg joint coord. system 1 to 2 via a contrived example'''
 
-        t = spot_micro_kinematics.t_1_to_2()
+        t = kinematics.t_1_to_2()
 
         known_true = np.array(
             [   [ 0,  0,            -1,    0],
@@ -155,7 +155,7 @@ class TestSpotMicroKinematics(unittest.TestCase):
 
         theta2 = 35*pi/180
         l2 = 0.4
-        t = spot_micro_kinematics.t_2_to_3(theta2,l2)
+        t = kinematics.t_2_to_3(theta2,l2)
 
         known_true = np.array(
             [   [cos(theta2),  -sin(theta2),             0,    l2*cos(theta2)],
@@ -176,7 +176,7 @@ class TestSpotMicroKinematics(unittest.TestCase):
 
         theta3 = 35*pi/180
         l3 = 0.4
-        t = spot_micro_kinematics.t_3_to_4(theta3,l3)
+        t = kinematics.t_3_to_4(theta3,l3)
 
         known_true = np.array(
             [   [cos(theta3),  -sin(theta3),             0,    l3*cos(theta3)],
@@ -202,15 +202,15 @@ class TestSpotMicroKinematics(unittest.TestCase):
         l2 = 0.2
         l3 = 0.4
 
-        t01 = spot_micro_kinematics.t_0_to_1(theta1,l1)
-        t12 = spot_micro_kinematics.t_1_to_2()
-        t23 = spot_micro_kinematics.t_2_to_3(theta2,l2)
-        t34 = spot_micro_kinematics.t_3_to_4(theta3,l3)
+        t01 = kinematics.t_0_to_1(theta1,l1)
+        t12 = kinematics.t_1_to_2()
+        t23 = kinematics.t_2_to_3(theta2,l2)
+        t34 = kinematics.t_3_to_4(theta3,l3)
 
         # known_true = t01 @ t12 @ t23 @ t34
         known_true = np.matmul(np.matmul(np.matmul(t01, t12), t23), t34)
 
-        t = spot_micro_kinematics.t_0_to_4(theta1,theta2,theta3,l1,l2,l3)
+        t = kinematics.t_0_to_4(theta1,theta2,theta3,l1,l2,l3)
 
         try:
             np.testing.assert_array_almost_equal(t, known_true)

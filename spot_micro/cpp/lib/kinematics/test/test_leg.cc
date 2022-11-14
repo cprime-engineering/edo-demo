@@ -3,7 +3,7 @@
 #include "Eigen/Geometry"
 #include <gtest/gtest.h>
 
-#include "include/spot_micro_leg.h"
+#include "include/leg.h"
 
 using namespace std;
 using namespace Eigen;

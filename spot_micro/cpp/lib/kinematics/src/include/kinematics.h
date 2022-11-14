@@ -3,7 +3,7 @@
 #include "Eigen/Geometry"
 
 #include "utils.h"
-#include "spot_micro_leg.h"
+#include "leg.h"
 
 namespace smk
 { // Start smk namespace
