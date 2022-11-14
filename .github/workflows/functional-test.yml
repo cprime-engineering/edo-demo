@@ -21,7 +21,7 @@ jobs:
       - name: Unit Tests
         run: >
           ./bazelisk --bazelrc=.bazel/bazelrc/gh.workflow.bazelrc
-          test //cpp/...
+           test //spot_micro/...
       - name: BDD Tests
         run: >
           ./bazelisk --bazelrc=.bazel/bazelrc/gh.workflow.bazelrc

@@ -27,7 +27,7 @@ jobs:
         with:
           languages: ${{ matrix.language }}
       - name: Build
-        run: make bazel/build/X86-64
+        run: make bazel/build
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
         with:
