@@ -44,12 +44,18 @@ COPY home/vscode/.bashrc /home/vscode/.bashrc
 # copy toolkit directory --------------------------------------------------------------------------------------
 COPY opt/toolkit /opt/toolkit
 
+# copy install scripts ----------------------------------------------------------------------------------------
+COPY install-scripts/*.sh /tmp/install-scripts/
+
 # Update apt-get ----------------------------------------------------------------------------------------------
 RUN apt-get update
 
 # software-properties-common ----------------------------------------------------------------------------------
 RUN pwd \
   && apt-get -y install software-properties-common --no-install-recommends
+
+# Install ros2 ------------------------------------------------------------------------------------------------
+RUN /bin/bash /tmp/install-scripts/install-ros2.sh
 
 # install build essential -------------------------------------------------------------------------------------
 RUN pwd \
@@ -144,11 +150,14 @@ RUN go install github.com/bazelbuild/buildtools/buildifier@latest
 # Install bazel buildozer --------------------------------------------------------------------------------------
 RUN go install github.com/bazelbuild/buildtools/buildozer@latest
 
+# As vscode user ----------------------------------------------------------------------------------------------
+USER vscode
+
 # Install grype -----------------------------------------------------------------------------------------------
 RUN curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b ~/grype
 
-# As vscode user ----------------------------------------------------------------------------------------------
-USER vscode
+# Setup ros2 --------------------------------------------------------------------------------------------------
+RUN /bin/bash /opt/ros/humble/setup.bash
 
 # Install adr-tools -------------------------------------------------------------------------------------------
 RUN git clone https://github.com/npryce/adr-tools.git /home/vscode/adr-tools \
