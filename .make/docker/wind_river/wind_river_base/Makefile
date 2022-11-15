@@ -17,7 +17,7 @@
 # Build the wind_river_base docker image
 #--------------------------------------------------------------------------------------------------------------
 docker/wind_river_base/build:
-	docker build -f docker/wind_river/wind_river_base/wind_river_base.Dockerfile -t wind_river_base:0.0.0 .
+	docker build -f docker/release/wind_river/wind_river_base/wind_river_base.Dockerfile -t wind_river_base:0.0.0 .
 
 #--------------------------------------------------------------------------------------------------------------
 # run

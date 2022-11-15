@@ -17,7 +17,7 @@
 # Build the ros_noetic_test docker image
 #--------------------------------------------------------------------------------------------------------------
 docker/ros_noetic_test/build: docker/ros_noetic_release/build
-	docker build -f docker/ros_noetic/ros_noetic_test/ros_noetic_test.Dockerfile -t ros_noetic_test:0.0.0 .
+	docker build -f docker/release/ros_noetic/ros_noetic_test/ros_noetic_test.Dockerfile -t ros_noetic_test:0.0.0 .
 
 #--------------------------------------------------------------------------------------------------------------
 # test

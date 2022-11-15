@@ -17,7 +17,7 @@
 # Build the wind_river_test docker image
 #--------------------------------------------------------------------------------------------------------------
 docker/wind_river_test/build: docker/wind_river_release/build
-	docker build -f docker/wind_river/wind_river_test/wind_river_test.Dockerfile -t wind_river_test:0.0.0 .
+	docker build -f docker/release/wind_river/wind_river_test/wind_river_test.Dockerfile -t wind_river_test:0.0.0 .
 
 #--------------------------------------------------------------------------------------------------------------
 # test
