@@ -54,9 +54,6 @@ RUN apt-get update
 RUN pwd \
   && apt-get -y install software-properties-common --no-install-recommends
 
-# Install ros2 ------------------------------------------------------------------------------------------------
-RUN /bin/bash /tmp/install-scripts/install-ros2.sh
-
 # install build essential -------------------------------------------------------------------------------------
 RUN pwd \
   && apt-get -y install build-essential --no-install-recommends
