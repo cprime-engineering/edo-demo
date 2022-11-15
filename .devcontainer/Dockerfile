@@ -153,9 +153,6 @@ USER vscode
 # Install grype -----------------------------------------------------------------------------------------------
 RUN curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b ~/grype
 
-# Setup ros2 --------------------------------------------------------------------------------------------------
-RUN /bin/bash /opt/ros/humble/setup.bash
-
 # Install adr-tools -------------------------------------------------------------------------------------------
 RUN git clone https://github.com/npryce/adr-tools.git /home/vscode/adr-tools \
   && cd /home/vscode/adr-tools && git checkout tags/3.0.0
