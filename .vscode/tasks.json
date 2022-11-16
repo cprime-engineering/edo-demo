@@ -13,5 +13,17 @@
 				"runOn": "folderOpen"
 			}
 		},
+		{
+			"label": "Generate compile_commands.json",
+			"type": "shell",
+			"command": "make bazel/generate/compile_commands",
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"runOptions": {
+				"runOn": "folderOpen"
+			}
+		},
 	]
 }
