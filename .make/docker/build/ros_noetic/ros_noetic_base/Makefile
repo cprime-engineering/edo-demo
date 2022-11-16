@@ -1,34 +1,34 @@
 #--------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------
-# Name: ros
-# Description: ros
+# Name: ros_noetic_base
+# Description: ros_noetic_base
 #--------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------
 
 #--------------------------------------------------------------------------------------------------------------
 #
-# Begin ros make targets
+# Begin ros_noetic_base make targets
 #
 #--------------------------------------------------------------------------------------------------------------
 
 #--------------------------------------------------------------------------------------------------------------
 # build
 #--------------------------------------------------------------------------------------------------------------
-# test codebase using ros container
+# Build the build ros_noetic_base docker image
 #--------------------------------------------------------------------------------------------------------------
-ros/build: docker/build/ros_noetic_base/build
-	docker run --mount type=bind,source=/workspaces/edo-demo,target=/workspaces/edo-demo build/ros_noetic_base:0.0.0 /workspaces/edo-demo/.make/ros/build.sh
+docker/build/ros_noetic_base/build:
+	docker build -f docker/build/ros_noetic/ros_noetic_base/ros_noetic_base.Dockerfile -t build/ros_noetic_base:0.0.0 .
 
 #--------------------------------------------------------------------------------------------------------------
-# test
+# run
 #--------------------------------------------------------------------------------------------------------------
-# test codebase using ros container
+# Run the build ros_noetic_base docker image
 #--------------------------------------------------------------------------------------------------------------
-ros/test: docker/build/ros_noetic_base/build
-	docker run --mount type=bind,source=/workspaces/edo-demo,target=/workspaces/edo-demo build/ros_noetic_base:0.0.0 /workspaces/edo-demo/.make/ros/test.sh
+docker/build/ros_noetic_base/run: docker/build/ros_noetic_base/build
+	docker run -it --entrypoint /bin/bash build/ros_noetic_base:0.0.0
 
 #--------------------------------------------------------------------------------------------------------------
 #
-# End ros make targets
+# End ros_noetic_base make targets
 #
 #--------------------------------------------------------------------------------------------------------------
