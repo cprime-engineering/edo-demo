@@ -47,75 +47,8 @@ COPY opt/toolkit /opt/toolkit
 # copy install scripts ----------------------------------------------------------------------------------------
 COPY install-scripts/*.sh /tmp/install-scripts/
 
-# Update apt-get ----------------------------------------------------------------------------------------------
-RUN apt-get update
-
-# software-properties-common ----------------------------------------------------------------------------------
-RUN pwd \
-  && apt-get -y install software-properties-common --no-install-recommends
-
-# install build essential -------------------------------------------------------------------------------------
-RUN pwd \
-  && apt-get -y install build-essential --no-install-recommends
-
-# install cmake -----------------------------------------------------------------------------------------------
-RUN pwd \
-  && apt-get -y install cmake --no-install-recommends
-
-# install unzip -----------------------------------------------------------------------------------------------
-RUN pwd \
-  && apt-get -y install unzip --no-install-recommends
-
-# install clang-tidy ------------------------------------------------------------------------------------------
-RUN pwd \
-  && apt-get install -y clang-tidy --no-install-recommends
-
-# install clang-format ----------------------------------------------------------------------------------------
-RUN pwd \
-  && apt-get install -y clang-format --no-install-recommends
-
-# install uncrustify ------------------------------------------------------------------------------------------
-RUN pwd \
-  && apt-get install -y uncrustify --no-install-recommends
-
-# install cppcheck --------------------------------------------------------------------------------------------
-RUN pwd \
-  && apt-get install -y cppcheck --no-install-recommends
-
-# install include-what-you-use --------------------------------------------------------------------------------
-RUN pwd \
-  && apt-get install -y iwyu --no-install-recommends
-
-# Install python tools ----------------------------------------------------------------------------------------
-RUN pwd \
-  && apt-get -y install python3-venv python3-pip python3-dev --no-install-recommends
-
-# Install golang ----------------------------------------------------------------------------------------------
-RUN pwd \
-  && apt-get -y install golang --no-install-recommends
-
-# Install nodejs ----------------------------------------------------------------------------------------------
-RUN pwd \
-  && curl -sL https://deb.nodesource.com/setup_19.x | sudo -E bash - \
-  && apt-get update \
-  && apt-get -y install nodejs --no-install-recommends \
-  && npm install -g npm@9.1.1
-
-# Install ruby ------------------------------------------------------------------------------------------------
-RUN pwd \
-  && apt-get -y install ruby-full --no-install-recommends
-
-# Install java-11-jdk -----------------------------------------------------------------------------------------
-RUN pwd \
-  && apt-get -y install openjdk-11-jdk --no-install-recommends
-
-# Install lcov ------------------------------------------------------------------------------------------------
-RUN pwd \
-  && apt-get -y install lcov --no-install-recommends
-
-# install bash-completion -------------------------------------------------------------------------------------
-RUN pwd \
-  && apt-get -y install bash-completion --no-install-recommends
+# Execute apt-get installs ------------------------------------------------------------------------------------
+RUN /bin/bash /tmp/install-scripts/apt-installs.sh
 
 # Install pre-commit ------------------------------------------------------------------------------------------
 RUN pip install pre-commit
