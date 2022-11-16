@@ -14,18 +14,18 @@
 #--------------------------------------------------------------------------------------------------------------
 # build
 #--------------------------------------------------------------------------------------------------------------
-# Build the ros_noetic_release docker image
+# Build the release ros_noetic_release docker image
 #--------------------------------------------------------------------------------------------------------------
-docker/ros_noetic_release/build: bazel/build docker/ros_noetic_base/build
-	docker build -f docker/release/ros_noetic/ros_noetic_release/ros_noetic_release.Dockerfile -t ros_noetic_release:0.0.0 .
+docker/release/ros_noetic_release/build: bazel/build docker/release/ros_noetic_base/build
+	docker build -f docker/release/ros_noetic/ros_noetic_release/ros_noetic_release.Dockerfile -t release/ros_noetic_release:0.0.0 .
 
 #--------------------------------------------------------------------------------------------------------------
 # run
 #--------------------------------------------------------------------------------------------------------------
-# Run to the ros_noetic_release docker image
+# Run the release ros_noetic_release docker image
 #--------------------------------------------------------------------------------------------------------------
-docker/ros_noetic_release/run: docker/ros_noetic_release/build
-	docker run -it --entrypoint /bin/bash ros_noetic_release:0.0.0
+docker/release/ros_noetic_release/run: docker/release/ros_noetic_release/build
+	docker run -it --entrypoint /bin/bash release/ros_noetic_release:0.0.0
 
 
 #--------------------------------------------------------------------------------------------------------------

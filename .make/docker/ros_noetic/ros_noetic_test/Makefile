@@ -14,26 +14,26 @@
 #--------------------------------------------------------------------------------------------------------------
 # build
 #--------------------------------------------------------------------------------------------------------------
-# Build the ros_noetic_test docker image
+# Build the release ros_noetic_test docker image
 #--------------------------------------------------------------------------------------------------------------
-docker/ros_noetic_test/build: docker/ros_noetic_release/build
-	docker build -f docker/release/ros_noetic/ros_noetic_test/ros_noetic_test.Dockerfile -t ros_noetic_test:0.0.0 .
+docker/release/ros_noetic_test/build: docker/release/ros_noetic_release/build
+	docker build -f docker/release/ros_noetic/ros_noetic_test/ros_noetic_test.Dockerfile -t release/ros_noetic_test:0.0.0 .
 
 #--------------------------------------------------------------------------------------------------------------
 # test
 #--------------------------------------------------------------------------------------------------------------
-# Test the ros_noetic_test docker image
+# Test the release ros_noetic_test docker image
 #--------------------------------------------------------------------------------------------------------------
-docker/ros_noetic_test/test: bazel/test docker/ros_noetic_test/build
-	docker run ros_noetic_test:0.0.0
+docker/release/ros_noetic_test/test: bazel/test docker/release/ros_noetic_test/build
+	docker run release/ros_noetic_test:0.0.0
 
 #--------------------------------------------------------------------------------------------------------------
 # run
 #--------------------------------------------------------------------------------------------------------------
-# Run to the ros_noetic_test docker image
+# Run the release ros_noetic_test docker image
 #--------------------------------------------------------------------------------------------------------------
-docker/ros_noetic_test/run: docker/ros_noetic_test/build
-	docker run -it --entrypoint /bin/sh ros_noetic_test:0.0.0
+docker/release/ros_noetic_test/run: docker/release/ros_noetic_test/build
+	docker run -it --entrypoint /bin/sh release/ros_noetic_test:0.0.0
 
 #--------------------------------------------------------------------------------------------------------------
 #

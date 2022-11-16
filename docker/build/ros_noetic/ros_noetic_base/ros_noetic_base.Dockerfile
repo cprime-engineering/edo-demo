@@ -1,4 +1,4 @@
-FROM release/ros_noetic_base:0.0.0
+FROM ros:noetic
 
 # Set working directory ---------------------------------------------------------------------------------------
 WORKDIR /
