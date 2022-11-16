@@ -1,5 +1,5 @@
 <a href="https://cprime.com/" target="_blank">
-<img src=".assets/cprime-logo.png" width="300" />
+<img src=".assets/cprime_logo.png" width="300" />
 </a>
 
 [![Maintained by CPrime Elite Engineering](https://img.shields.io/badge/maintained%20by-cprime%20elite%20engineering-ED1846)](https://cprime.com/)
@@ -10,7 +10,7 @@
 
 # Embedded DevSecOps Demo
 
-<img src=".assets/embedded-devops-banner.jpg"/>
+<img src=".assets/embedded_devops_banner.jpg"/>
 
 ## Documentation
 
@@ -101,4 +101,4 @@ Creation of architecural decision records relating to this repo is automated usi
 
 This code is released under the MIT License. Please see [LICENSE](/LICENSE) and [NOTICE](/NOTICE) for more details.
 
-<img src=".assets/i4-embedded-crop.jpg"/>
+<img src=".assets/i4_embedded_crop.jpg"/>
