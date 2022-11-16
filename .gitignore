@@ -6,3 +6,5 @@ bazel-testlogs
 bazel-edo-demo
 bazel-coverage/*
 build-bin
+
+compile_commands.json

@@ -34,13 +34,20 @@ bazel/coverage:
 
 
 #--------------------------------------------------------------------------------------------------------------
-# bazel build X86-64
+# bazel build
 #--------------------------------------------------------------------------------------------------------------
 bazel/build:
 	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc build //:build_spot
 	if [ -d "build-bin" ]; then rm -Rf build-bin; fi && mkdir build-bin
 	cp -r bazel-bin/** build-bin
 	readelf -h bazel-bin/spot_micro/cpp/apps/smoke_test/src/smoke_test | fgrep Machine:
+
+#--------------------------------------------------------------------------------------------------------------
+# bazel generate compile_commands.json
+#--------------------------------------------------------------------------------------------------------------
+bazel/generate/compile_commands:
+	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc build //:compilation_database
+	cp bazel-bin/compile_commands.json .
 
 #--------------------------------------------------------------------------------------------------------------
 # bazel version
