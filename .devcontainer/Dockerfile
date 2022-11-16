@@ -50,45 +50,17 @@ COPY install-scripts/*.sh /tmp/install-scripts/
 # Execute apt-get installs ------------------------------------------------------------------------------------
 RUN /bin/bash /tmp/install-scripts/apt-installs.sh
 
-# Install pre-commit ------------------------------------------------------------------------------------------
-RUN pip install pre-commit
+# Execute pip installs ----------------------------------------------------------------------------------------
+RUN /bin/bash /tmp/install-scripts/pip-installs.sh
 
-# Install azure-cli -------------------------------------------------------------------------------------------
-RUN pip install azure-cli
-
-# Install behave ----------------------------------------------------------------------------------------------
-RUN pip install behave
-
-# Install pybind11 --------------------------------------------------------------------------------------------
-RUN pip install pybind11
-
-# Install matplotlib ------------------------------------------------------------------------------------------
-RUN pip install matplotlib
-
-# Install snyk ------------------------------------------------------------------------------------------------
-RUN npm install snyk -g
-
-# Install ember-cli -------------------------------------------------------------------------------------------
-RUN npm install -g ember-cli
-
-# Install github_changelog_generator --------------------------------------------------------------------------
-RUN gem install github_changelog_generator
-
-# Install bazel buildifier -------------------------------------------------------------------------------------
-RUN go install github.com/bazelbuild/buildtools/buildifier@latest
-
-# Install bazel buildozer --------------------------------------------------------------------------------------
-RUN go install github.com/bazelbuild/buildtools/buildozer@latest
+# Execute gem installs ----------------------------------------------------------------------------------------
+RUN /bin/bash /tmp/install-scripts/gem-installs.sh
 
 # As vscode user ----------------------------------------------------------------------------------------------
 USER vscode
 
-# Install grype -----------------------------------------------------------------------------------------------
-RUN curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b ~/grype
-
-# Install adr-tools -------------------------------------------------------------------------------------------
-RUN git clone https://github.com/npryce/adr-tools.git /home/vscode/adr-tools \
-  && cd /home/vscode/adr-tools && git checkout tags/3.0.0
+# Execute user installs ---------------------------------------------------------------------------------------
+RUN /bin/bash /tmp/install-scripts/user-installs.sh
 
 # Copy adr-tools template -------------------------------------------------------------------------------------
 COPY home/vscode/adr-tools/src/template.md /home/vscode/adr-tools/src/template.md
