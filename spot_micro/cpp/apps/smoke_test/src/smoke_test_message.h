@@ -5,12 +5,8 @@
 #include <string>
 
 class MessageClass {
-
-public:
-
-    std::string getMainMessage() {
-        return "SMOKE-TEST";
-    }
+ public:
+  std::string getMainMessage() { return "SMOKE-TEST"; }
 };
 
 #endif

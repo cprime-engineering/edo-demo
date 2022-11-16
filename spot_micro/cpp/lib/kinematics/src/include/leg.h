@@ -1,59 +1,54 @@
 #pragma once
 
 #include "Eigen/Geometry"
-
 #include "utils.h"
 
-namespace smk
-{
+namespace smk {
 
-    class SpotMicroLeg
-    {
+class SpotMicroLeg {
+ public:
+  // Constructor, sets a leg up with initial joint angles and link lengths
+  SpotMicroLeg(const JointAngles &joint_angles, const LinkLengths &link_lengths,
+               bool is_leg_12);
 
-    public:
-        // Constructor, sets a leg up with initial joint angles and link lengths
-        SpotMicroLeg(const JointAngles &joint_angles,
-                     const LinkLengths &link_lengths,
-                     bool is_leg_12);
+  // Also use default constructor
+  SpotMicroLeg() = default;
 
-        // Also use default constructor
-        SpotMicroLeg() = default;
+  // Sets the three leg angles and updates homogeneous transformation
+  // matrices
+  void setAngles(const JointAngles &joint_angles);
 
-        // Sets the three leg angles and updates homogeneous transformation
-        // matrices
-        void setAngles(const JointAngles &joint_angles);
+  // Set the foot position in the leg's local coordinate system
+  void setFootPosLocalCoordinates(const Point &point);
 
-        // Set the foot position in the leg's local coordinate system
-        void setFootPosLocalCoordinates(const Point &point);
+  // Set the foot position in global coordinate system given a desired point, at
+  // the ht representing the start of the leg's coordinate system
+  void setFootPosGlobalCoordinates(const Point &point,
+                                   const Eigen::Matrix4f &ht_leg_start);
 
-        // Set the foot position in global coordinate system given a desired point, at
-        // the ht representing the start of the leg's coordinate system
-        void setFootPosGlobalCoordinates(const Point &point,
-                                         const Eigen::Matrix4f &ht_leg_start);
+  // Returns the foot position in the global coordinate system given the ht
+  // representing the start of the leg's coordinate system
+  Point getFootPosGlobalCoordinates(const Eigen::Matrix4f &ht_leg_start);
 
-        // Returns the foot position in the global coordinate system given the ht
-        // representing the start of the leg's coordinate system
-        Point getFootPosGlobalCoordinates(const Eigen::Matrix4f &ht_leg_start);
+  // Returns the three joint angles, ang1, ang2, ang3
+  JointAngles getLegJointAngles();
 
-        // Returns the three joint angles, ang1, ang2, ang3
-        JointAngles getLegJointAngles();
+  // Get homogenous transform for leg base to link 1
+  Eigen::Matrix4f getTransform0To1();
 
-        // Get homogenous transform for leg base to link 1
-        Eigen::Matrix4f getTransform0To1();
+  // Get homogenous transform for leg base to link 3
+  Eigen::Matrix4f getTransform1To3();
 
-        // Get homogenous transform for leg base to link 3
-        Eigen::Matrix4f getTransform1To3();
+  // Get homogenous transform for leg base to link 4
+  Eigen::Matrix4f getTransform3To4();
 
-        // Get homogenous transform for leg base to link 4
-        Eigen::Matrix4f getTransform3To4();
+ private:
+  JointAngles joint_angles_;  // Joint angles of the leg
 
-    private:
-        JointAngles joint_angles_; // Joint angles of the leg
+  LinkLengths link_lengths_;  // Lengths of the leg links
 
-        LinkLengths link_lengths_; // Lengths of the leg links
+  bool is_leg_12_;  // Boolean representing whether leg is 1 or 2,
+                    // (as opposed to 3 or 4)
+};
 
-        bool is_leg_12_; // Boolean representing whether leg is 1 or 2,
-                         // (as opposed to 3 or 4)
-    };
-
-}
+}  // namespace smk
