@@ -4,7 +4,7 @@ FROM release/ros_noetic_release:0.0.0
 WORKDIR /
 
 # copy smoke_test executable ----------------------------------------------------------------------------------
-COPY build-bin/smoke_test /usr/bin/smoke_test
+COPY build-bin/spot_micro/cpp/apps/smoke_test/src/smoke_test /usr/bin/smoke_test
 
 # copy entrypoint.sh ------------------------------------------------------------------------------------------
 COPY docker/release/ros_noetic/ros_noetic_test/ros_noetic_test.entrypoint.sh /entrypoint.sh

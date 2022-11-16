@@ -4,7 +4,7 @@ FROM wind_river_release:0.0.0
 WORKDIR /
 
 # copy smoke_test executable ----------------------------------------------------------------------------------
-COPY build-bin/smoke_test /usr/bin/smoke_test
+COPY build-bin/spot_micro/cpp/apps/smoke_test/src/smoke_test /usr/bin/smoke_test
 
 # copy entrypoint.sh ------------------------------------------------------------------------------------------
 COPY docker/release/wind_river/wind_river_test/wind_river_test.entrypoint.sh /entrypoint.sh
