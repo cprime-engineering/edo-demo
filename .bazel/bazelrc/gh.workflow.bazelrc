@@ -3,6 +3,7 @@
 #--------------------------------------------------------------------------------------------------------------
 
 build --action_env WORKSPACE_DIR="/home/runner/work/edo-demo/edo-demo"
+build --default_visibility=public
 
 test --test_output=all
 

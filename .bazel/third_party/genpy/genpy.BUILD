@@ -5,7 +5,7 @@ py_library(
     srcs = glob(["spot_micro/**/*.py"]),
     imports = ["spot_micro"],
     deps = [
-        "@genmsg//:genmsg",
+        "@genmsg_repo//:genmsg",
     ],
 )
 

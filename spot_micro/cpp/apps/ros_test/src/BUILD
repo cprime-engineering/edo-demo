@@ -1,3 +1,4 @@
+
 cc_binary(
     name = "talker",
     visibility = ["//visibility:public"],
