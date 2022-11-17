@@ -44,6 +44,28 @@ http_archive(
     urls = ["https://github.com/grailbio/bazel-compilation-database/archive/0.5.2.tar.gz"],
 )
 
+http_archive(
+    name = "genmsg_repo",
+    build_file = "//.bazel/third_party/genmsg:genmsg.BUILD",
+    strip_prefix = "genmsg-0.6.0",
+    urls = ["https://github.com/ros/genmsg/archive/0.6.0.tar.gz"],
+)
+
+http_archive(
+    name = "genpy_repo",
+    build_file = "//.bazel/third_party/genpy:genpy.BUILD",
+    strip_prefix = "genpy-0.6.16",
+    urls = ["https://github.com/ros/genpy/archive/0.6.16.tar.gz"],
+)
+
+http_archive(
+    name = "gencpp_repo",
+    build_file = "//.bazel/third_party/gencpp:gencpp.BUILD",
+    strip_prefix = "gencpp-0.7.0",
+    urls = ["https://github.com/ros/gencpp/archive/0.7.0.tar.gz"],
+
+)
+
 #--------------------------------------------------------------------------------------------------------------
 # git repositories
 #--------------------------------------------------------------------------------------------------------------
@@ -68,3 +90,18 @@ bazel_compdb_deps()
 load("@//.bazel/python/configure:python_configure.bzl", "python_configure")
 
 python_configure(name = "local_config_python")
+
+#--------------------------------------------------------------------------------------------------------------
+# ROS configuration
+#--------------------------------------------------------------------------------------------------------------
+
+load("@//.bazel/ros:repository_rules.bzl", "import_ros_workspace")
+
+import_ros_workspace(
+    name = "ros_ws",
+    path = "/opt/ros/noetic",
+)
+
+load("@ros_ws//:workspace.bzl", "ros_repositories")
+
+ros_repositories()
