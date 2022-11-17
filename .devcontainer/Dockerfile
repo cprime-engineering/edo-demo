@@ -57,11 +57,14 @@ RUN /bin/bash /tmp/build_scripts/apt_installs.sh
 # execute pip installs ----------------------------------------------------------------------------------------
 RUN /bin/bash /tmp/build_scripts/pip_installs.sh
 
+# execute ros noetic install ----------------------------------------------------------------------------------
+RUN /bin/bash /tmp/build_scripts/ros_noetic_install.sh
+
 # as vscode user ----------------------------------------------------------------------------------------------
 USER vscode
 
 # execute user installs ---------------------------------------------------------------------------------------
-# RUN /bin/bash /tmp/build_scripts/user_installs.sh
+RUN /bin/bash /tmp/build_scripts/user_installs.sh
 
 # copy adr-tools template -------------------------------------------------------------------------------------
 COPY home/vscode/adr-tools/src/template.md /home/vscode/adr-tools/src/template.md
