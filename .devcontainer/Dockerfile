@@ -1,6 +1,6 @@
 # [Choice] Ubuntu version -------------------------------------------------------------------------------------
 # (use ubuntu-22.04 or ubuntu-18.04 on local arm64/Apple Silicon): ubuntu-22.04, ubuntu-20.04, ubuntu-18.04
-ARG VARIANT=ubuntu-22.04
+ARG VARIANT=ubuntu-20.04
 FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
 
 # build options -----------------------------------------------------------------------------------------------
@@ -57,14 +57,11 @@ RUN /bin/bash /tmp/build_scripts/apt_installs.sh
 # execute pip installs ----------------------------------------------------------------------------------------
 RUN /bin/bash /tmp/build_scripts/pip_installs.sh
 
-# execute gem installs ----------------------------------------------------------------------------------------
-RUN /bin/bash /tmp/build_scripts/gem_installs.sh
-
 # as vscode user ----------------------------------------------------------------------------------------------
 USER vscode
 
 # execute user installs ---------------------------------------------------------------------------------------
-RUN /bin/bash /tmp/build_scripts/user_installs.sh
+# RUN /bin/bash /tmp/build_scripts/user_installs.sh
 
 # copy adr-tools template -------------------------------------------------------------------------------------
 COPY home/vscode/adr-tools/src/template.md /home/vscode/adr-tools/src/template.md
