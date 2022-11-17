@@ -18,7 +18,9 @@ apt-get install -y --no-install-recommends \
     python3-catkin-tools \
     python3-empy \
     python3-rosinstall-generator \
-    python3-wstool
+    python3-wstool \
+    python3-gencpp \
+    python3-genpy
 
 # install ros-noetic-ros-base ---------------------------------------------------------------------------------
 apt-get -y install ros-noetic-ros-base --no-install-recommends
