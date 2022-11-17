@@ -5,6 +5,13 @@
 	"mounts": ["source=dind-var-lib-docker,target=/var/lib/docker,type=volume"],
 	"overrideCommand": false,
 
+	// Configure host requirements.
+	"hostRequirements": {
+		"cpus": 8,
+		"memory": "8gb",
+		"storage": "32gb"
+	 },
+
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.

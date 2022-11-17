@@ -22,4 +22,4 @@ repos:
     rev: master
     hooks:
       - id: clang-format
-        args: [-i]
+        args: [-style=Google, -i]
