@@ -4,7 +4,7 @@ def _import_ros_workspace_impl(repository_ctx):
     # Generate top-level workspace.bzl file and build files for all ROS packages
     # in the workspace.
     res = repository_ctx.execute([
-        "/workspaces/edo-demo/.bazel/ros/gen_ros_workspace_bzl.py",
+        repository_ctx.attr._gen_ros_workspace,
         "--ws-name",
         "ros_ws",
         "--ros-path",
@@ -25,7 +25,7 @@ import_ros_workspace = repository_rule(
         "path": attr.string(mandatory = True),
         "_gen_ros_workspace": attr.label(
             executable = True,
-            default = Label("@//.bazel/ros:repository_rules.bzl"),
+            default = Label("@//.bazel/ros:gen_ros_workspace_bzl.py"),
             cfg = "host",
         ),
     },
