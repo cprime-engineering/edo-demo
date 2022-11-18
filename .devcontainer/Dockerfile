@@ -57,6 +57,9 @@ RUN /bin/bash /tmp/build_scripts/apt_installs.sh
 # execute pip installs ----------------------------------------------------------------------------------------
 RUN /bin/bash /tmp/build_scripts/pip_installs.sh
 
+# execute npm installs ----------------------------------------------------------------------------------------
+RUN /bin/bash /tmp/build_scripts/npm_installs.sh
+
 # execute ros noetic install ----------------------------------------------------------------------------------
 RUN /bin/bash /tmp/build_scripts/ros_noetic_install.sh
 

@@ -57,8 +57,6 @@ TEST(testSetJointAngles, basic_test) {
 }
 
 TEST(testSetFootPos, basic_test) {
-  float d2r = M_PI / 180.0f;
-
   // Create a spot micro kinematics object, set reachable foot positions given
   // the leg and body geometry
   SpotMicroConfig smc = {0.1, 0.4, 0.4, 0.4, 0.5};
@@ -198,8 +196,6 @@ TEST(testSetBodyAngle, basic_test) {
 }
 
 TEST(testSetBodyPos, basic_test) {
-  float d2r = M_PI / 180.0f;
-
   // Create a spot micro kinematics object, set reachable foot positions given
   // the leg and body geometry.
   //

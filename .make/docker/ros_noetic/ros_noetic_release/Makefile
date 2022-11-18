@@ -27,6 +27,14 @@ docker/ros_noetic_release/build: bazel/build docker/ros_noetic_base/build
 docker/ros_noetic_release/run: docker/ros_noetic_release/build
 	docker run -it --entrypoint /bin/bash ros_noetic_release:0.0.0
 
+#--------------------------------------------------------------------------------------------------------------
+# scan local
+#--------------------------------------------------------------------------------------------------------------
+# Scan the ros_noetic_release container for vulnerabilities.
+#--------------------------------------------------------------------------------------------------------------
+docker/ros_noetic_release/scan: docker/ros_noetic_release/build
+	grype ros_noetic_release:0.0.0
+	snyk container test ros_noetic_release:0.0.0
 
 #--------------------------------------------------------------------------------------------------------------
 #
