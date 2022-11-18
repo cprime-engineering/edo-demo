@@ -64,7 +64,7 @@ RUN /bin/bash /tmp/build_scripts/ros_noetic_install.sh
 USER vscode
 
 # execute user installs ---------------------------------------------------------------------------------------
-RUN /bin/bash /tmp/build_scripts/user_installs.sh
+RUN /bin/bash /tmp/build_scripts/vscode_user_specific_installs.sh
 
 # copy adr-tools template -------------------------------------------------------------------------------------
 COPY home/vscode/adr-tools/src/template.md /home/vscode/adr-tools/src/template.md
