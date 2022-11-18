@@ -1,34 +1,35 @@
 #--------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------
-# Name: ros_noetic_base
-# Description: ros_noetic_base
+# Name: ros_noetic_release
+# Description: ros_noetic_release
 #--------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------
 
 #--------------------------------------------------------------------------------------------------------------
 #
-# Begin ros_noetic_base make targets
+# Begin ros_noetic_release make targets
 #
 #--------------------------------------------------------------------------------------------------------------
 
 #--------------------------------------------------------------------------------------------------------------
 # build
 #--------------------------------------------------------------------------------------------------------------
-# Build the build ros_noetic_base docker image
+# Build the ros_noetic_release docker image
 #--------------------------------------------------------------------------------------------------------------
-docker/build/ros_noetic_base/build:
-	docker build -f docker/build/ros_noetic/ros_noetic_base/ros_noetic_base.Dockerfile -t build/ros_noetic_base:0.0.0 .
+docker/ros_noetic_release/build: bazel/build docker/ros_noetic_base/build
+	docker build -f docker/ros_noetic/ros_noetic_release/ros_noetic_release.Dockerfile -t ros_noetic_release:0.0.0 .
 
 #--------------------------------------------------------------------------------------------------------------
 # run
 #--------------------------------------------------------------------------------------------------------------
-# Run the build ros_noetic_base docker image
+# Run the ros_noetic_release docker image
 #--------------------------------------------------------------------------------------------------------------
-docker/build/ros_noetic_base/run: docker/build/ros_noetic_base/build
-	docker run -it --entrypoint /bin/bash build/ros_noetic_base:0.0.0
+docker/ros_noetic_release/run: docker/ros_noetic_release/build
+	docker run -it --entrypoint /bin/bash ros_noetic_release:0.0.0
+
 
 #--------------------------------------------------------------------------------------------------------------
 #
-# End ros_noetic_base make targets
+# End ros_noetic_release make targets
 #
 #--------------------------------------------------------------------------------------------------------------

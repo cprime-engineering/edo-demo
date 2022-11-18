@@ -1,35 +1,42 @@
 #--------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------
-# Name: ros_noetic_release
-# Description: ros_noetic_release
+# Name: ros_noetic_test
+# Description: ros_noetic_test
 #--------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------
 
 #--------------------------------------------------------------------------------------------------------------
 #
-# Begin ros_noetic_release make targets
+# Begin ros_noetic_test make targets
 #
 #--------------------------------------------------------------------------------------------------------------
 
 #--------------------------------------------------------------------------------------------------------------
 # build
 #--------------------------------------------------------------------------------------------------------------
-# Build the release ros_noetic_release docker image
+# Build the ros_noetic_test docker image
 #--------------------------------------------------------------------------------------------------------------
-docker/release/ros_noetic_release/build: bazel/build docker/release/ros_noetic_base/build
-	docker build -f docker/release/ros_noetic/ros_noetic_release/ros_noetic_release.Dockerfile -t release/ros_noetic_release:0.0.0 .
+docker/ros_noetic_test/build: docker/ros_noetic_release/build
+	docker build -f docker/ros_noetic/ros_noetic_test/ros_noetic_test.Dockerfile -t ros_noetic_test:0.0.0 .
+
+#--------------------------------------------------------------------------------------------------------------
+# test
+#--------------------------------------------------------------------------------------------------------------
+# Test the ros_noetic_test docker image
+#--------------------------------------------------------------------------------------------------------------
+docker/ros_noetic_test/test: bazel/test docker/ros_noetic_test/build
+	docker run ros_noetic_test:0.0.0
 
 #--------------------------------------------------------------------------------------------------------------
 # run
 #--------------------------------------------------------------------------------------------------------------
-# Run the release ros_noetic_release docker image
+# Run the ros_noetic_test docker image
 #--------------------------------------------------------------------------------------------------------------
-docker/release/ros_noetic_release/run: docker/release/ros_noetic_release/build
-	docker run -it --entrypoint /bin/bash release/ros_noetic_release:0.0.0
-
+docker/ros_noetic_test/run: docker/ros_noetic_test/build
+	docker run -it --entrypoint /bin/sh ros_noetic_test:0.0.0
 
 #--------------------------------------------------------------------------------------------------------------
 #
-# End ros_noetic_release make targets
+# End ros_noetic_test make targets
 #
 #--------------------------------------------------------------------------------------------------------------
