@@ -414,20 +414,3 @@ python_configure = repository_rule(
         "python_interpreter_target": attr.label(),
     },
 )
-"""Detects and configures the local Python.
-Add the following to your WORKSPACE FILE:
-```python
-python_configure(name = "local_config_python")
-```
-Args:
-  name: A unique name for this workspace rule.
-  python_version: If set to "3", will build for Python 3, i.e. will build
-      against the installation corresponding to the binary returned by
-      `which python3`.
-      If set to "2", will build for Python 2 (`which python2`).
-      By default, will build for whatever Python version is returned by
-      `which python`.
-  python_interpreter_target: If set to a target providing a Python binary,
-      will configure for that Python version instead of the installed
-      binary. This configuration takes precedence over python_version.
-"""
