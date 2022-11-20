@@ -1,30 +1,29 @@
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
-load("@//.bazel/third_party/com_grail_bazel_compdb:deps.bzl", "bazel_compdb_deps")
+load("@//.bazel/python/configure:python_configure.bzl", "python_configure")
 
 #--------------------------------------------------------------------------------------------------------------
-# C++ configuration
+# Python configuration
 #--------------------------------------------------------------------------------------------------------------
 def workspace():
 
     http_archive(
-        name = "eigen3",
-        build_file = "//.bazel/third_party/eigen3:BUILD",
-        sha256 = "0e7aeece6c8874146c2a4addc437eebdf1ec4026680270f00e76705c8186f0b5",
-        strip_prefix = "eigen-3.3.5",
-        url = "https://gitlab.com/libeigen/eigen/-/archive/3.3.5/eigen-3.3.5.zip",
+        name = "rules_python",
+        sha256 = "954aa89b491be4a083304a2cb838019c8b8c3720a7abb9c4cb81ac7a24230cea",
+        url = "https://github.com/bazelbuild/rules_python/releases/download/0.4.0/rules_python-0.4.0.tar.gz",
     )
 
     http_archive(
-        name = "com_grail_bazel_compdb",
-        sha256 = "d32835b26dd35aad8fd0ba0d712265df6565a3ad860d39e4c01ad41059ea7eda",
-        strip_prefix = "bazel-compilation-database-0.5.2",
-        urls = ["https://github.com/grailbio/bazel-compilation-database/archive/0.5.2.tar.gz"],
+        name = "pybind11",
+        build_file = "//.bazel/third_party/pybind11:BUILD",
+        sha256 = "111014b516b625083bef701df7880f78c2243835abdb263065b6b59b960b6bad",
+        strip_prefix = "pybind11-2.10.1",
+        urls = ["https://github.com/pybind/pybind11/archive/v2.10.1.tar.gz"],
     )
 
-    bazel_compdb_deps()
+    python_configure(name = "local_config_python")
 
 #--------------------------------------------------------------------------------------------------------------
 # Alias so it can be loaded without assigning to a different symbol to prevent
 # shadowing previous loads and trigger a buildifier warning.
 #--------------------------------------------------------------------------------------------------------------
-tf_workspace_01 = workspace
+tf_workspace_python = workspace
