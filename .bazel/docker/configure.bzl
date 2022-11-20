@@ -19,6 +19,5 @@ def configure_docker():
         name = "ros_noetic_base",
         registry = "docker.io",
         repository = "ros",
-        # 'tag' is also supported, but digest is encouraged for reproducibility.
         digest = "sha256:34cbfe55d811fe7c57add8b3d6f01ba9c209258ef1b4029cec5118dcd21e358f",
     )

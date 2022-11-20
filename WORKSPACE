@@ -8,7 +8,6 @@ workspace(name = "edo-demo")
 #--------------------------------------------------------------------------------------------------------------
 
 load("@//.bazel/workspace:workspace_global.bzl", "workspace_global")
-
 workspace_global()
 
 #--------------------------------------------------------------------------------------------------------------
@@ -16,45 +15,37 @@ workspace_global()
 #--------------------------------------------------------------------------------------------------------------
 
 load("@//.bazel/workspace:workspace_ros.bzl", "workspace_ros")
-
 workspace_ros()
 
 load("@ros_ws//:workspace.bzl", "ros_repositories")
-
 ros_repositories()
 
 #--------------------------------------------------------------------------------------------------------------
 # Python configuration
 #--------------------------------------------------------------------------------------------------------------
 load("@//.bazel/workspace:workspace_python.bzl", "workspace_python")
-
 workspace_python()
 
 #--------------------------------------------------------------------------------------------------------------
 # C++ configuration
 #--------------------------------------------------------------------------------------------------------------
 load("@//.bazel/workspace:workspace_cpp.bzl", "workspace_cpp")
-
 workspace_cpp()
 
 #--------------------------------------------------------------------------------------------------------------
 # Golang configuration
 #--------------------------------------------------------------------------------------------------------------
 load("@//.bazel/workspace:workspace_go.bzl", "workspace_go")
-
 workspace_go()
 
 load("@//.bazel/golang:configure.bzl", "configure_golang")
-
 configure_golang()
 
 #--------------------------------------------------------------------------------------------------------------
 # Docker configuration
 #--------------------------------------------------------------------------------------------------------------
 load("@//.bazel/workspace:workspace_docker.bzl", "workspace_docker")
-
 workspace_docker()
 
 load("@//.bazel/docker:configure.bzl", "configure_docker")
-
 configure_docker()
