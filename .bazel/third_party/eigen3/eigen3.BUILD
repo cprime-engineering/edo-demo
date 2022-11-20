@@ -1,6 +1,6 @@
 cc_library(
     name = "eigen3",
-    visibility = ["//visibility:public"],
+    visibility = ["@//visibility:public"],
     hdrs = glob(
         include = ["Eigen/**"],
         exclude = ["Eigen/**/CMakeLists.txt"],

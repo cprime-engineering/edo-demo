@@ -1,4 +1,4 @@
-package(default_visibility = ["//visibility:public"])
+package(default_visibility = ["@//visibility:public"])
 
 # Point both runtimes to the same python binary to ensure we always
 # use the python binary specified by ./configure.py script.

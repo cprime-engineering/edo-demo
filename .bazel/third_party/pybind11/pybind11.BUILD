@@ -1,7 +1,7 @@
 # pybind11 - Seamless operability between C++11 and Python.
 load("@rules_cc//cc:defs.bzl", "cc_library")
 
-package(default_visibility = ["//visibility:public"])
+package(default_visibility = ["@//visibility:public"])
 
 licenses(["notice"])
 
