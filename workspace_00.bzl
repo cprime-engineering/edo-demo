@@ -14,7 +14,7 @@ def workspace():
 
     http_archive(
         name = "pybind11",
-        build_file = "//.bazel/third_party/pybind11:pybind11.BUILD",
+        build_file = "//.bazel/third_party/pybind11:BUILD",
         sha256 = "111014b516b625083bef701df7880f78c2243835abdb263065b6b59b960b6bad",
         strip_prefix = "pybind11-2.10.1",
         urls = ["https://github.com/pybind/pybind11/archive/v2.10.1.tar.gz"],
