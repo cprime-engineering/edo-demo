@@ -6,7 +6,7 @@ generate_messages(
     ]),
     ros_package_name = "other_msgs",
     deps = [
-        "//spot_micro/cpp/apps/ros_test/src/hello_msgs:msgs",
+        "@//spot_micro/cpp/apps/ros_test/src/hello_msgs:msgs",
         "@std_msgs//:msgs",
     ],
 )
