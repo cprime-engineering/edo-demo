@@ -24,7 +24,7 @@ docker/ros_noetic_test/build: docker/ros_noetic_release/build
 #--------------------------------------------------------------------------------------------------------------
 # Test the ros_noetic_test docker image
 #--------------------------------------------------------------------------------------------------------------
-docker/ros_noetic_test/test: bazel/test docker/ros_noetic_test/build
+docker/ros_noetic_test/test: bazel/test/spot docker/ros_noetic_test/build
 	docker run ros_noetic_test:0.0.0
 
 #--------------------------------------------------------------------------------------------------------------

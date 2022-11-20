@@ -16,7 +16,7 @@
 #--------------------------------------------------------------------------------------------------------------
 # Build the ros_noetic_release docker image
 #--------------------------------------------------------------------------------------------------------------
-docker/ros_noetic_release/build: bazel/build docker/ros_noetic_base/build
+docker/ros_noetic_release/build: bazel/build/spot docker/ros_noetic_base/build
 	docker build -f docker/ros_noetic/ros_noetic_release/ros_noetic_release.Dockerfile -t ros_noetic_release:0.0.0 .
 
 #--------------------------------------------------------------------------------------------------------------
