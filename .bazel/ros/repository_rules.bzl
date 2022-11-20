@@ -26,7 +26,7 @@ import_ros_workspace = repository_rule(
         "_generate_ros_workspace": attr.label(
             executable = True,
             default = Label("@//.bazel/ros:generate_ros_workspace.py"),
-            cfg = "host",
+            cfg = "exec",
         ),
     },
     implementation = _import_ros_workspace_impl,

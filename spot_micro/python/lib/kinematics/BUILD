@@ -1,19 +1,19 @@
 py_test(
     name = "test_stick_figure",
     srcs = ["tests/test_stick_figure.py"],
-    deps = ["//spot_micro/python/lib/kinematics:kinematics"]
+    deps = ["//spot_micro/python/lib/kinematics"],
 )
 
 py_test(
     name = "test_kinematics",
     srcs = ["utilities/tests/test_kinematics.py"],
-    deps = ["//spot_micro/python/lib/kinematics:kinematics"]
+    deps = ["//spot_micro/python/lib/kinematics"],
 )
 
 py_test(
     name = "test_transformations",
     srcs = ["utilities/tests/test_transformations.py"],
-    deps = ["//spot_micro/python/lib/kinematics:kinematics"]
+    deps = ["//spot_micro/python/lib/kinematics"],
 )
 
 py_library(

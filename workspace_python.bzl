@@ -5,7 +5,6 @@ load("@//.bazel/python/configure:python_configure.bzl", "python_configure")
 # Python configuration
 #--------------------------------------------------------------------------------------------------------------
 def workspace():
-
     http_archive(
         name = "rules_python",
         sha256 = "954aa89b491be4a083304a2cb838019c8b8c3720a7abb9c4cb81ac7a24230cea",

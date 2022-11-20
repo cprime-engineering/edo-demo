@@ -5,7 +5,6 @@ load("@//.bazel/third_party/com_grail_bazel_compdb:deps.bzl", "bazel_compdb_deps
 # C++ configuration
 #--------------------------------------------------------------------------------------------------------------
 def workspace():
-
     http_archive(
         name = "eigen3",
         build_file = "//.bazel/third_party/eigen3:BUILD",

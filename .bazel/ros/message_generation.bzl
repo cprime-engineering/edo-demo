@@ -1,4 +1,4 @@
-load("@//.bazel/ros:path_utils.bzl", "basename", "dirname", "join_paths")
+load("@//.bazel/ros:path_utils.bzl", "basename", "join_paths")
 
 RosMsgProvider = provider(fields = [
     "info",
@@ -135,7 +135,7 @@ _genpy = rule(
         "_gen_script": attr.label(
             default = Label("@genpy_repo//:genmsg_py"),
             executable = True,
-            cfg = "host",
+            cfg = "exec",
         ),
         "msgs": attr.label(
             providers = [RosMsgProvider],
@@ -196,7 +196,7 @@ _gencpp = rule(
         "_gen_script": attr.label(
             default = Label("@gencpp_repo//:gen_cpp"),
             executable = True,
-            cfg = "host",
+            cfg = "exec",
         ),
         "msgs": attr.label(
             providers = [RosMsgProvider],

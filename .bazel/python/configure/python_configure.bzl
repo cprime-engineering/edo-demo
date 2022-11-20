@@ -18,7 +18,6 @@ def _tpl(repository_ctx, tpl, substitutions = {}, out = None):
         substitutions,
     )
 
-
 def _fail(msg):
     """Output failure message when auto configuration fails."""
     red = "\033[0;31m"
@@ -92,7 +91,8 @@ def _genrule(src_dir, genrule_name, command, outs, local):
         "genrule(\n" +
         '    name = "' +
         genrule_name + '",\n' + (
-        "    local = 1,\n" if local else "") +
+            "    local = 1,\n" if local else ""
+        ) +
         "    outs = [\n" +
         outs +
         "\n    ],\n" +
@@ -410,7 +410,7 @@ python_configure = repository_rule(
         _PYTHON_LIB_PATH,
     ],
     attrs = {
-        "python_version": attr.string(default=""),
+        "python_version": attr.string(default = ""),
         "python_interpreter_target": attr.label(),
     },
 )
