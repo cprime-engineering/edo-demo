@@ -1,3 +1,5 @@
+package(default_visibility = ["@//visibility:public"])
+
 py_library(
     name = "joystick_control",
     srcs = [

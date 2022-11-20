@@ -1,5 +1,7 @@
 load("@rules_cc//cc:defs.bzl", "cc_library")
 
+package(default_visibility = ["@//visibility:public"])
+
 cc_library(
     name = "kinematics",
     srcs = [
@@ -16,7 +18,6 @@ cc_library(
         ".",
         "include",
     ],
-    visibility = ["//visibility:public"],
     deps = [
         "@eigen3",
     ],

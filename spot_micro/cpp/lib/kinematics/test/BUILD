@@ -1,3 +1,5 @@
+package(default_visibility = ["@//visibility:public"])
+
 cc_test(
     name = "test_kinematics",
     size = "small",
@@ -6,7 +8,6 @@ cc_test(
         "test_leg.cc",
         "test_utils.cc",
     ],
-    visibility = ["//visibility:public"],
     deps = [
         "//spot_micro/cpp/lib/kinematics/src:kinematics",
         "@com_google_googletest//:gtest_main",
