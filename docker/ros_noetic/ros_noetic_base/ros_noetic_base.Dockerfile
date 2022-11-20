@@ -1,4 +1,4 @@
-FROM osrf/ros:noetic-desktop-full
+FROM ros:noetic-ros-base
 
 # Set working directory ---------------------------------------------------------------------------------------
 WORKDIR /
