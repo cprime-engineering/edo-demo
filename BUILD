@@ -5,32 +5,16 @@ compilation_database(
     name = "compilation_database",
     output_base = OUTPUT_BASE,
     targets = [
-        "build_spot",
+        "spot_micro_cpp",
     ],
 )
 
 filegroup(
-    name = "build_spot",
+    name = "spot_micro_cpp",
     srcs = [
         "@//spot_micro/cpp/apps/ros_test/src:listener",
         "@//spot_micro/cpp/apps/ros_test/src:talker",
         "@//spot_micro/cpp/apps/smoke_test/src:smoke_test",
         "@//spot_micro/cpp/apps/smoke_test/src:smoke_test_library",
     ],
-)
-
-cc_library(
-    name = "ros",
-    srcs = glob(["lib/*.so"]),
-    hdrs = glob([
-        "include/**/*.h",
-        "include/**/*.hpp",
-    ]),
-    strip_include_prefix = "include",
-)
-
-py_library(
-    name = "ros_python",
-    srcs = glob(["lib/python3/dist-packages/**/*.py"]),
-    imports = ["lib/python3/dist-packages/"],
 )

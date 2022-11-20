@@ -19,6 +19,15 @@ bazel/clean:
 	if [ -d "build-bin" ]; then rm -Rf build-bin; fi
 
 #--------------------------------------------------------------------------------------------------------------
+# bazel build spot
+#--------------------------------------------------------------------------------------------------------------
+bazel/build/spot:
+	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc build @//spot_micro/...
+	if [ -d "build-bin" ]; then rm -Rf build-bin; fi && mkdir build-bin
+	cp -r bazel-bin/** build-bin
+	readelf -h bazel-bin/spot_micro/cpp/apps/smoke_test/src/smoke_test | fgrep Machine:
+
+#--------------------------------------------------------------------------------------------------------------
 # bazel test spot
 #--------------------------------------------------------------------------------------------------------------
 bazel/test/spot:
@@ -26,19 +35,10 @@ bazel/test/spot:
 	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc test @//features/...
 
 #--------------------------------------------------------------------------------------------------------------
-# bazel build spot
-#--------------------------------------------------------------------------------------------------------------
-bazel/build/spot:
-	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc build //spot_micro/...
-	if [ -d "build-bin" ]; then rm -Rf build-bin; fi && mkdir build-bin
-	cp -r bazel-bin/** build-bin
-	readelf -h bazel-bin/spot_micro/cpp/apps/smoke_test/src/smoke_test | fgrep Machine:
-
-#--------------------------------------------------------------------------------------------------------------
 # bazel generate compile_commands.json
 #--------------------------------------------------------------------------------------------------------------
 bazel/generate/compile_commands:
-	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc build //:compilation_database
+	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc build @//:compilation_database
 	cp bazel-bin/compile_commands.json .
 
 #--------------------------------------------------------------------------------------------------------------
