@@ -35,6 +35,18 @@ bazel/test/spot:
 	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc test @//features/...
 
 #--------------------------------------------------------------------------------------------------------------
+# bazel build ros_noetic_base container image
+#--------------------------------------------------------------------------------------------------------------
+bazel/build/ros_noetic_base_container:
+	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc build @//docker/ros_noetic/ros_noetic_base:ros_noetic_base_container
+
+#--------------------------------------------------------------------------------------------------------------
+# bazel test ros_noetic_test container image
+#--------------------------------------------------------------------------------------------------------------
+bazel/test/ros_noetic_container:
+	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc test @//docker/ros_noetic/ros_noetic_test:ros_noetic_test_dockerfile_test
+
+#--------------------------------------------------------------------------------------------------------------
 # bazel generate compile_commands.json
 #--------------------------------------------------------------------------------------------------------------
 bazel/generate/compile_commands:
