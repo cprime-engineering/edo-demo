@@ -8,7 +8,7 @@ def configure_docker():
     docker_toolchain_configure(
         name = "docker_config",
         docker_flags = [
-            "--log-level=iverbose",
+            "--log-level=info",
         ],
     )
 
