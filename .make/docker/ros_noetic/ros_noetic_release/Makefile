@@ -17,7 +17,7 @@
 # Build the ros_noetic_release docker image
 #--------------------------------------------------------------------------------------------------------------
 docker/ros_noetic_release/build: bazel/build/spot docker/ros_noetic_base/build
-	docker build -f docker/ros_noetic/ros_noetic_release/ros_noetic_release.Dockerfile -t ros_noetic_release:0.0.0 .
+	docker build -f docker/ros_noetic/ros_noetic_release/ros_noetic_release.Dockerfile -t ros_noetic_release:dockerfile_image .
 
 #--------------------------------------------------------------------------------------------------------------
 # run
@@ -25,7 +25,7 @@ docker/ros_noetic_release/build: bazel/build/spot docker/ros_noetic_base/build
 # Run the ros_noetic_release docker image
 #--------------------------------------------------------------------------------------------------------------
 docker/ros_noetic_release/run: docker/ros_noetic_release/build
-	docker run -it --entrypoint /bin/bash ros_noetic_release:0.0.0
+	docker run -it --entrypoint /bin/bash ros_noetic_release:dockerfile_image
 
 #--------------------------------------------------------------------------------------------------------------
 # scan local
@@ -33,8 +33,8 @@ docker/ros_noetic_release/run: docker/ros_noetic_release/build
 # Scan the ros_noetic_release container for vulnerabilities.
 #--------------------------------------------------------------------------------------------------------------
 docker/ros_noetic_release/scan: docker/ros_noetic_release/build
-	grype ros_noetic_release:0.0.0
-	snyk container test ros_noetic_release:0.0.0
+	grype ros_noetic_release:dockerfile_image
+	snyk container test ros_noetic_release:dockerfile_image
 
 #--------------------------------------------------------------------------------------------------------------
 #

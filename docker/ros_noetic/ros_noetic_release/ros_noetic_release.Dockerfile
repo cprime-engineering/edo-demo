@@ -1,4 +1,4 @@
-FROM ros_noetic_base:0.0.0
+FROM ros_noetic_base:dockerfile_image
 
 # Set working directory ---------------------------------------------------------------------------------------
 WORKDIR /

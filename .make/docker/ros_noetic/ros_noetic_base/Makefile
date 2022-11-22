@@ -17,7 +17,7 @@
 # Build the ros_noetic_base docker image
 #--------------------------------------------------------------------------------------------------------------
 docker/ros_noetic_base/build:
-	docker build -f docker/ros_noetic/ros_noetic_base/ros_noetic_base.Dockerfile -t ros_noetic_base:0.0.0 .
+	docker build -f docker/ros_noetic/ros_noetic_base/ros_noetic_base.Dockerfile -t ros_noetic_base:dockerfile_image .
 
 #--------------------------------------------------------------------------------------------------------------
 # run
@@ -25,7 +25,7 @@ docker/ros_noetic_base/build:
 # Run the ros_noetic_base docker image
 #--------------------------------------------------------------------------------------------------------------
 docker/ros_noetic_base/run: docker/ros_noetic_base/build
-	docker run -it --entrypoint /bin/bash ros_noetic_base:0.0.0
+	docker run -it --entrypoint /bin/bash ros_noetic_base:dockerfile_image
 
 #--------------------------------------------------------------------------------------------------------------
 #

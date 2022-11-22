@@ -17,7 +17,7 @@
 # Build the ros_noetic_test docker image
 #--------------------------------------------------------------------------------------------------------------
 docker/ros_noetic_test/build: docker/ros_noetic_release/build
-	docker build -f docker/ros_noetic/ros_noetic_test/ros_noetic_test.Dockerfile -t ros_noetic_test:0.0.0 .
+	docker build -f docker/ros_noetic/ros_noetic_test/ros_noetic_test.Dockerfile -t ros_noetic_test:dockerfile_image .
 
 #--------------------------------------------------------------------------------------------------------------
 # test
@@ -25,7 +25,7 @@ docker/ros_noetic_test/build: docker/ros_noetic_release/build
 # Test the ros_noetic_test docker image
 #--------------------------------------------------------------------------------------------------------------
 docker/ros_noetic_test/test: bazel/test/spot docker/ros_noetic_test/build
-	docker run ros_noetic_test:0.0.0
+	docker run ros_noetic_test:dockerfile_image
 
 #--------------------------------------------------------------------------------------------------------------
 # run
@@ -33,7 +33,7 @@ docker/ros_noetic_test/test: bazel/test/spot docker/ros_noetic_test/build
 # Run the ros_noetic_test docker image
 #--------------------------------------------------------------------------------------------------------------
 docker/ros_noetic_test/run: docker/ros_noetic_test/build
-	docker run -it --entrypoint /bin/sh ros_noetic_test:0.0.0
+	docker run -it --entrypoint /bin/sh ros_noetic_test:dockerfile_image
 
 #--------------------------------------------------------------------------------------------------------------
 #

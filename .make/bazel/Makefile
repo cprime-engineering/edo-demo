@@ -38,7 +38,13 @@ bazel/test/spot:
 # bazel build ros_noetic_base container image
 #--------------------------------------------------------------------------------------------------------------
 bazel/build/ros_noetic_base_container:
-	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc build @//docker/ros_noetic/ros_noetic_base:ros_noetic_base_container
+	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc build @//docker/ros_noetic/ros_noetic_base:ros_noetic_base
+
+#--------------------------------------------------------------------------------------------------------------
+# bazel build ros_noetic_release container image
+#--------------------------------------------------------------------------------------------------------------
+bazel/build/ros_noetic_release_container:
+	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc build @//docker/ros_noetic/ros_noetic_release:ros_noetic_release
 
 #--------------------------------------------------------------------------------------------------------------
 # bazel test ros_noetic_test container image
