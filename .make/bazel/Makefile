@@ -55,7 +55,7 @@ bazel/build/ros_noetic_test_container: bazel/build/ros_noetic_release_container
 #--------------------------------------------------------------------------------------------------------------
 # bazel test ros_noetic_test container image
 #--------------------------------------------------------------------------------------------------------------
-bazel/test/ros_noetic_container: bazel/build/ros_noetic_test_container
+bazel/test/ros_noetic_container: bazel/build/spot bazel/test/spot bazel/build/ros_noetic_test_container
 	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc test @//docker/ros_noetic/ros_noetic_test:ros_noetic_test_dockerfile_test
 
 #--------------------------------------------------------------------------------------------------------------
