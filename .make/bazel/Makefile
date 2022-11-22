@@ -43,13 +43,19 @@ bazel/build/ros_noetic_base_container:
 #--------------------------------------------------------------------------------------------------------------
 # bazel build ros_noetic_release container image
 #--------------------------------------------------------------------------------------------------------------
-bazel/build/ros_noetic_release_container:
+bazel/build/ros_noetic_release_container: bazel/build/ros_noetic_base_container
+	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc build @//docker/ros_noetic/ros_noetic_release:ros_noetic_release
+
+#--------------------------------------------------------------------------------------------------------------
+# bazel build ros_noetic_test container image
+#--------------------------------------------------------------------------------------------------------------
+bazel/build/ros_noetic_test_container: bazel/build/ros_noetic_release_container
 	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc build @//docker/ros_noetic/ros_noetic_release:ros_noetic_release
 
 #--------------------------------------------------------------------------------------------------------------
 # bazel test ros_noetic_test container image
 #--------------------------------------------------------------------------------------------------------------
-bazel/test/ros_noetic_container:
+bazel/test/ros_noetic_container: bazel/build/ros_noetic_test_container
 	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc test @//docker/ros_noetic/ros_noetic_test:ros_noetic_test_dockerfile_test
 
 #--------------------------------------------------------------------------------------------------------------

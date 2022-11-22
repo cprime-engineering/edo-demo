@@ -4,12 +4,12 @@ package(default_visibility = ["@//visibility:public"])
 
 container_image(
     name = "ros_noetic_test_container",
-    base = "@ros_noetic_base_dockerfile//image:dockerfile_image.tar",
+    base = "@ros_noetic_test//image:dockerfile_image.tar",
 )
 
 container_test(
     name = "ros_noetic_test_dockerfile_test",
     configs = ["@//docker/ros_noetic/ros_noetic_test:test_config.yaml"],
     driver = "tar",
-    image = "@ros_noetic_test_dockerfile//image:dockerfile_image",
+    image = "@ros_noetic_test//image:dockerfile_image",
 )
