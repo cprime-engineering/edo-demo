@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Parses the CMake files in a ROS installation directory (eg /opt/ros/melodic)
+Parses the CMake files in a ROS installation directory (eg /opt/ros/noetic)
 and produces bazel files to import each catkin package with the right
 dependency information.
 """
