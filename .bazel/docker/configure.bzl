@@ -27,13 +27,3 @@ def configure_docker():
         name = "ros_noetic_base",
         dockerfile = "@//docker/ros_noetic/ros_noetic_base:ros_noetic_base.Dockerfile",
     )
-
-    dockerfile_image(
-        name = "ros_noetic_release",
-        dockerfile = "@//docker/ros_noetic/ros_noetic_release:ros_noetic_release.Dockerfile",
-    )
-
-    dockerfile_image(
-        name = "ros_noetic_test",
-        dockerfile = "@//docker/ros_noetic/ros_noetic_test:ros_noetic_test.Dockerfile",
-    )

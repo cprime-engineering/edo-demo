@@ -4,5 +4,5 @@ package(default_visibility = ["@//visibility:public"])
 
 container_image(
     name = "ros_noetic_release",
-    base = "@ros_noetic_release//image:dockerfile_image.tar",
+    base = "@//docker/ros_noetic/ros_noetic_base:ros_noetic_base",
 )

@@ -5,8 +5,11 @@ package(default_visibility = ["@//visibility:public"])
 
 container_image(
     name = "ros_noetic_test_container",
-    base = "@ros_noetic_test//image:dockerfile_image.tar",
-    files = ["@//docker/ros_noetic/ros_noetic_test:entrypoint.sh"],
+    base = "@//docker/ros_noetic/ros_noetic_release:ros_noetic_release",
+    files = [
+        "@//docker/ros_noetic/ros_noetic_test:entrypoint.sh",
+        "@//spot_micro/cpp/apps/smoke_test/bdd:smoke_test_bdd.so",
+    ],
 )
 
 container_test(
