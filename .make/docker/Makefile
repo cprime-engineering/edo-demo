@@ -1,42 +1,32 @@
 #--------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------
-# Name: ros_noetic_test
-# Description: ros_noetic_test
+# Name: docker
+# Description: docker
 #--------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------
 
 #--------------------------------------------------------------------------------------------------------------
 #
-# Begin ros_noetic_test make targets
+# Begin docker make targets
 #
 #--------------------------------------------------------------------------------------------------------------
 
 #--------------------------------------------------------------------------------------------------------------
-# build
+# docker attach to ros_noetic_test container image
 #--------------------------------------------------------------------------------------------------------------
-# Build the ros_noetic_test docker image
-#--------------------------------------------------------------------------------------------------------------
-docker/ros_noetic_test/build: docker/ros_noetic_release/build
-	docker build -f docker/ros_noetic/ros_noetic_test/ros_noetic_test.Dockerfile -t ros_noetic_test:dockerfile_image .
+docker/attach/ros_noetic_test_container: docker/clean bazel/run/ros_noetic_test_container
+	docker run -it --entrypoint /bin/sh bazel/docker/ros_noetic/ros_noetic_test:ros_noetic_test_container
 
 #--------------------------------------------------------------------------------------------------------------
-# test
+# remove all locally cached containers and images
 #--------------------------------------------------------------------------------------------------------------
-# Test the ros_noetic_test docker image
-#--------------------------------------------------------------------------------------------------------------
-docker/ros_noetic_test/test: bazel/test/spot docker/ros_noetic_test/build
-	docker run ros_noetic_test:dockerfile_image
 
-#--------------------------------------------------------------------------------------------------------------
-# run
-#--------------------------------------------------------------------------------------------------------------
-# Run the ros_noetic_test docker image
-#--------------------------------------------------------------------------------------------------------------
-docker/ros_noetic_test/run: docker/ros_noetic_test/build
-	docker run -it --entrypoint /bin/sh ros_noetic_test:dockerfile_image
+docker/clean: bazel/clean
+	docker container prune -f
+	docker rmi $$(docker images -a -q)
 
 #--------------------------------------------------------------------------------------------------------------
 #
-# End ros_noetic_test make targets
+# End docker make targets
 #
 #--------------------------------------------------------------------------------------------------------------

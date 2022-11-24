@@ -8,7 +8,7 @@ container_image(
     base = "@//docker/ros_noetic/ros_noetic_release:ros_noetic_release",
     files = [
         "@//docker/ros_noetic/ros_noetic_test:entrypoint.sh",
-        "@//spot_micro/cpp/apps/smoke_test/bdd:smoke_test_bdd.so",
+        "@//spot_micro/cpp/apps/smoke_test/src:smoke_test",
     ],
 )
 
