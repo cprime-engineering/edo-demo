@@ -7,8 +7,9 @@ container_image(
     name = "ros_noetic_test_container",
     base = "@//docker/ros_noetic/ros_noetic_release:ros_noetic_release",
     files = [
-        "@//docker/ros_noetic/ros_noetic_test:entrypoint.sh",
-        "@//spot_micro/cpp/apps/smoke_test/src:smoke_test",
+        "@//debian:spot-debian",
+        "@//docker/ros_noetic/ros_noetic_test:install.sh",
+        "@//docker/ros_noetic/ros_noetic_test:integration_test.sh",
     ],
 )
 

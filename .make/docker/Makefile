@@ -14,8 +14,14 @@
 #--------------------------------------------------------------------------------------------------------------
 # docker attach to ros_noetic_test container image
 #--------------------------------------------------------------------------------------------------------------
-docker/attach/ros_noetic_test_container: docker/clean bazel/run/ros_noetic_test_container
+docker/attach/ros_noetic_test_container: bazel/run/ros_noetic_test_container
 	docker run -it --entrypoint /bin/sh bazel/docker/ros_noetic/ros_noetic_test:ros_noetic_test_container
+
+#--------------------------------------------------------------------------------------------------------------
+# docker run integration test on ros_noetic_test container image
+#--------------------------------------------------------------------------------------------------------------
+docker/test/ros_noetic_test_container: bazel/run/ros_noetic_test_container
+	docker run --entrypoint /integration_test.sh bazel/docker/ros_noetic/ros_noetic_test:ros_noetic_test_container
 
 #--------------------------------------------------------------------------------------------------------------
 # remove all locally cached containers and images

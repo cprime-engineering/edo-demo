@@ -1,9 +1,11 @@
 #!/bin/bash -l
 
+. /install.sh
+
 echo "------------------------------------------------------------------"
-echo "Running Smoke Test"
+echo "Running Integration Test"
 echo "------------------------------------------------------------------"
 smoke_test
 echo "------------------------------------------------------------------"
-echo "Smoke Test Complete"
+echo "Integration Test Complete"
 echo "------------------------------------------------------------------"

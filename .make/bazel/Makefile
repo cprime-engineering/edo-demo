@@ -56,7 +56,7 @@ bazel/build/ros_noetic_test_container:
 # bazel run ros_noetic_test container image
 #--------------------------------------------------------------------------------------------------------------
 bazel/run/ros_noetic_test_container:
-	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc run @//docker/ros_noetic/ros_noetic_test:ros_noetic_test_container
+	./bazelisk --bazelrc=.bazel/bazelrc/gh.codespace.bazelrc run @//docker/ros_noetic/ros_noetic_test:ros_noetic_test_container -- /integration_test.sh
 
 #--------------------------------------------------------------------------------------------------------------
 # bazel test ros_noetic_test container image
