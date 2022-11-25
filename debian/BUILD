@@ -4,7 +4,7 @@ load("@rules_pkg//pkg:tar.bzl", "pkg_tar")
 pkg_deb(
     name = "spot-debian",
     architecture = "amd64",
-    built_using = "unzip (6.0.1)",
+    built_using = "unzip (6.0.0)",
     data = ":debian-data",
     depends = [
         "zlib1g-dev",

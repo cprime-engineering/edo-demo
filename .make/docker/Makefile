@@ -20,7 +20,7 @@ docker/attach/ros_noetic_test_container: bazel/run/ros_noetic_test_container
 #--------------------------------------------------------------------------------------------------------------
 # docker run integration test on ros_noetic_test container image
 #--------------------------------------------------------------------------------------------------------------
-docker/test/ros_noetic_test_container: bazel/run/ros_noetic_test_container
+docker/test/ros_noetic_test_container: bazel/test/spot bazel/test/ros_noetic_test_container bazel/run/ros_noetic_test_container
 	docker run --entrypoint /integration_test.sh bazel/docker/ros_noetic/ros_noetic_test:ros_noetic_test_container
 
 #--------------------------------------------------------------------------------------------------------------
