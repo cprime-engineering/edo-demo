@@ -12,21 +12,29 @@
 #--------------------------------------------------------------------------------------------------------------
 
 #--------------------------------------------------------------------------------------------------------------
+# scan local
+#--------------------------------------------------------------------------------------------------------------
+# Scan the ros_noetic_release container for vulnerabilities.
+#--------------------------------------------------------------------------------------------------------------
+docker/ros_noetic_release_container/scan: bazel/run/ros_noetic_release_container
+	grype bazel/docker/ros_noetic/ros_noetic_release:ros_noetic_release
+	snyk container test bazel/docker/ros_noetic/ros_noetic_release:ros_noetic_release
+
+#--------------------------------------------------------------------------------------------------------------
 # docker attach to ros_noetic_test container image
 #--------------------------------------------------------------------------------------------------------------
-docker/attach/ros_noetic_test_container: bazel/run/ros_noetic_test_container
-	docker run -it --entrypoint /bin/sh bazel/docker/ros_noetic/ros_noetic_test:ros_noetic_test_container
+docker/attach/ros_noetic_test: bazel/run/ros_noetic_test_container
+	docker run -it --entrypoint /bin/sh bazel/docker/ros_noetic/ros_noetic_test:ros_noetic_test
 
 #--------------------------------------------------------------------------------------------------------------
 # docker run integration test on ros_noetic_test container image
 #--------------------------------------------------------------------------------------------------------------
-docker/test/ros_noetic_test_container: bazel/test/spot bazel/test/ros_noetic_test_container bazel/run/ros_noetic_test_container
-	docker run --entrypoint /integration_test.sh bazel/docker/ros_noetic/ros_noetic_test:ros_noetic_test_container
+docker/test/ros_noetic_test: bazel/test/spot bazel/test/ros_noetic_test_container bazel/run/ros_noetic_test_container
+	docker run --entrypoint /integration_test.sh bazel/docker/ros_noetic/ros_noetic_test:ros_noetic_test
 
 #--------------------------------------------------------------------------------------------------------------
 # remove all locally cached containers and images
 #--------------------------------------------------------------------------------------------------------------
-
 docker/clean: bazel/clean
 	docker container prune -f
 	docker rmi $$(docker images -a -q)
