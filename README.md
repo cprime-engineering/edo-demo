@@ -70,9 +70,10 @@ This repo is maintained by CPrime Engineering. If you're looking for support, se
 CPrime Engineering can help with:
 
 * Setup, customization, and support for this repo.
-* Modules for other types of infrastructure, such as VPCs, Docker clusters, databases, and continuous integration.
+* Embedded DevSecOps.
+* Modules for all types of Infrastructure as Code, such as VPCs, Kubernetes clusters, databases, and continuous integration.
 * Modules that meet compliance requirements, such as HIPAA.
-* Consulting & Training on Azure, AWS, Terraform, and DevOps.
+* Consulting & Training on Azure, AWS, Terraform, and DevSecOps.
 
 ## How do I contribute to this repo?
 
