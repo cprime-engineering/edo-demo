@@ -1,6 +1,6 @@
 #!/bin/bash -l
 
-source /install.sh
+source /setup_spot_micro.sh
 
 echo "------------------------------------------------------------------"
 echo "Running Integration Test"
