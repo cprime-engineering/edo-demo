@@ -1,6 +1,6 @@
 #!/bin/bash -l
 
-. /install.sh
+source /install.sh
 
 echo "------------------------------------------------------------------"
 echo "Running Integration Test"
