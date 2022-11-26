@@ -31,3 +31,11 @@ The two ends of the spectrum are now beginning to merge towards one another. The
 With IoT, we can also see Machine Learning and Artificial Intelligence entering the embedded systems domain. Machine Learning is nothing without data, and IoT is nothing but data. A symbiotic relationship is developing between these technologies, driving the evolution of intelligent factories and smart cities. Robotics and autonomous vehicles also provide an environment of rapid transformation and the convergence of technical domains.
 
 Edge computing is the most apparent domain where embedded systems development and cloud technologies collide, with embedded systems acting as an extension of the cloud, providing compute resources and remote execution of containerized applications on the edge, embedded cloud.
+
+This change has now arrived, and like all change, it is happening very slowly and then all at once. Elite engineering teams have successfully integrated their software development lifecycles, but widespread adoption is far behind these early adopters.
+
+The contents of this repository aims to provide examples of how engineering teams can achieve this fusion between embedded systems engineering and cloud-native development practices. To quote William Gibson:
+
+"The future is here - it's just not evenly distributed."
+
+We want to help solve that.
