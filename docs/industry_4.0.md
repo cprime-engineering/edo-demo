@@ -12,6 +12,8 @@ Global events have accelerated that revolution in ways we could not imagine as r
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8_O70MOK-Cg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+Did they do it? Find out [here](https://youtu.be/hCcbz8B64yk).
+
 The following video is an insight into the rate of change and optimization in supply chain logistics—an insight into Amazon's smart warehouses. The video shows how much of a competitive edge AI and Robotics can provide but also discusses the challenges of integrating these technologies with a human workforce and the impact on workers' rights.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IMPbKVb8y8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
