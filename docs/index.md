@@ -20,4 +20,4 @@ Any engineering team not practicing continuous delivery and automated code quali
 
 Code quality automation provides a positive side-effect: a significant increase in delivery speed and innovation rate. Releasing software on-demand, multiple times per day, into production environments is possible. For companies born in this era, it is their normality, the true cloud-natives.
 
-Embedded systems software is one industry sector left behind throughout this revolution, which was an accident of circumstance.
+Embedded systems software is an industry sector left behind throughout this revolution, an accident of circumstance.
