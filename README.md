@@ -47,7 +47,7 @@ If you are viewing this readme by any other means go to the canonical repository
 ### Step 3: Run the tests.
 
 * From the command prompt in the project root of this repo, execute the following command.
-* `make bazel/test/spot`
+* `make docker/test/ros_noetic_test_container`
 
 ### Step 5: Eat, Sleep, Code, Repeat!
 
