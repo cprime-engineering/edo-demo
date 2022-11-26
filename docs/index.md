@@ -16,10 +16,10 @@ Over the last twenty years, cloud computing has revolutionized how engineers app
 
 In the last five years, mainstream engineering practices have matured to work cohesively within these new programming paradigms. Cloud-native development practices have crossed the chasm: they are the new normal, the state of the art.
 
-Any engineering team not practicing continuous delivery and automated code quality validation can now be considered Luddite. Artificial Intelligence plays a front-stage role in software development, code quality, and security demand AI's involvement. Contemporary software quality is now beyond human capacity.
+Any engineering team not practicing continuous delivery and automated code quality validation can now be considered Luddite. Artificial Intelligence now plays a front-stage role in software development, code quality, and security demand AI's involvement. Contemporary software quality is now beyond human capacity.
 
 Code quality automation provides a positive side-effect: a significant increase in delivery speed and innovation rate. Releasing software on-demand, multiple times per day, into production environments is possible. For companies born in this era, it is their normality, the true cloud-natives.
 
 Embedded systems software is an industry sector left behind throughout this revolution, an accident of circumstance and operational context.
 
-While cloud computing has evolved at an ever-increasing rate of innovation, the embedded systems development community has yet to adopt the new engineering disciplines associated with cloud computing. This lack of adoption should not surprise; the embedded systems development community has been thinking inside the box. That is their domain; that is where they develop software.
+While cloud computing has evolved at an ever-increasing rate of innovation, the embedded systems development community has yet to adopt the new engineering disciplines associated with cloud computing. This lack of adoption should not surprise; the embedded systems development communities' thinking has remained firmly inside the box. That is their domain; that is where they develop software.
