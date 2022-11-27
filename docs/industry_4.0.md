@@ -15,6 +15,9 @@ In the field of Industry 4.0, manufacturers are integrating new technologies thr
 
 Information Technology (IT) and Operational Technology (OT) are merging technical domains. Manufacturers are building smart factories and warehouse facilities with advanced sensors and embedded software systems. Robotics is evolving rapidly with ever-increasing intelligence and decision-making on the production line powered by advances in artificial intelligence.
 
+Advanced engineering technologies such as 3D printing, renewable energy, and the use of nanoparticles to develop new materials may result in the most significant evolutions in how we approach manufacturing. What to many may sound like science fiction is today being implemented in the real world by forward-thinking, technically advanced companies that are winning the race to own the future of manufacturing.
+
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8_O70MOK-Cg" title="YouTube video player" cc_load_policy="1" cc_lang_pref="en" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Did they do it? Find out [here](https://youtu.be/hCcbz8B64yk).
