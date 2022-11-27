@@ -31,6 +31,8 @@ has_children: false
 
 [Open Manufacturing Platform - open-manufacturing.org](https://open-manufacturing.org/)
 
+[OpenManufacturingPlatform - github.com](https://github.com/OpenManufacturingPlatform)
+
 ## Azure IoT Hub
 
 [Azure IoT Hub - azure.microsoft.com](https://azure.microsoft.com/en-gb/products/iot-hub/#overview)
