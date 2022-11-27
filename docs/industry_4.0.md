@@ -15,7 +15,9 @@ In the field of Industry 4.0, manufacturers are integrating new technologies thr
 
 Manufacturers are building smart factories and warehouse facilities with advanced sensors and embedded software systems. Robotics is evolving rapidly with ever-increasing intelligence and decision-making on the production line powered by advances in artificial intelligence. Virtual and Augmented Reality is transforming how employees train and interact with the industrial environment.
 
-Advanced engineering technologies such as 3D printing, renewable energy, and the use of nanoparticles to develop new materials may result in the most significant evolutions in how we approach manufacturing. What to many may sound like science fiction is today being implemented in the real world by forward-thinking, technically advanced companies that are winning the race to own the future of global manufacturing. The winners in this race are extending their lead. One can predict a tipping point where those corporations that have ignored this revolution and failed to invest in new technology find themselves with no means to recoup, uncompetitive and redundant.
+Advanced engineering technologies such as 3D printing, renewable energy, and the use of nanoparticles to develop new materials may result in the most significant evolutions in how we approach manufacturing. What to many may sound like science fiction is today being implemented in the real world by forward-thinking, technically advanced companies that are winning the race to own the future of global manufacturing.
+
+The winners in this race are extending their lead. One can predict a tipping point where those corporations that have ignored this revolution and failed to invest in new technology find themselves with no means to recoup, uncompetitive and redundant.
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8_O70MOK-Cg" title="YouTube video player" cc_load_policy="1" cc_lang_pref="en" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
