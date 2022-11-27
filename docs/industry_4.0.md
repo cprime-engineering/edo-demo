@@ -22,7 +22,7 @@ The winners in this race are extending their lead. One can predict a tipping poi
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8_O70MOK-Cg" title="YouTube video player" cc_load_policy="1" cc_lang_pref="en" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Did they do it? Find out [here](https://youtu.be/hCcbz8B64yk).
+Did they do it? Find out [here](https://youtu.be/hCcbz8B64yk). Spoiler alert, the EQXX is available in late 2023 for ~$140,000 on the road.
 
 The following video is an insight into the rate of change and optimization in supply chain logistics—an insight into Amazon's smart warehouses. The video shows how much of a competitive edge AI and Robotics can provide but also discusses the challenges of integrating these technologies with a human workforce and the impact on workers' rights.
 
