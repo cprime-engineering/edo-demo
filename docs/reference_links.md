@@ -18,3 +18,5 @@ has_children: false
 [What is Industry 4.0? - IBM](https://www.ibm.com/topics/industry-4-0)
 
 [AI Customer Success Stories - Microsoft AI](https://www.microsoft.com/en-us/ai/customer-stories)
+
+[Industry 4.0 - bmwgroup.com](https://www.bmwgroup.com/en/innovation/company/industrie-4-0.html)
