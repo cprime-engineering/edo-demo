@@ -15,4 +15,4 @@ IoT Hub facilitates bi-directional communication in the cloud. Capable of authen
 
 We selected Azure IoT Hub for this demonstration solution for two main reasons.
 
-The first is that BMW and Microsoft have already invested in a real-world solution within BMW's Industry 4.0 manufacturing facilities. The result is a fully operational, product-grade, and battle-tested solution.
+The first is that BMW and Microsoft have already invested in a real-world solution within BMW's Industry 4.0 manufacturing facilities. The result is a fully operational, production-grade, battle-tested solution.
