@@ -29,8 +29,10 @@ has_children: false
 
 ## Azure IoT
 
-[Azure IoT Hub](https://azure.microsoft.com/en-gb/products/iot-hub/#overview)
+[Azure IoT Hub - azure.microsoft.com](https://azure.microsoft.com/en-gb/products/iot-hub/#overview)
 
-[Azure IoT Hub for ROS](https://github.com/microsoft/ros_azure_iothub)
+[Microsoft and the BMW Group launch the Open Manufacturing Platform - news.microsoft.com](https://news.microsoft.com/2019/04/02/microsoft-and-the-bmw-group-launch-the-open-manufacturing-platform/)
 
-[Boston Dynamics Spot Ros Wrapper](https://github.com/microsoft/spot-ros-wrapper)
+[Azure IoT Hub for ROS - github.com/microsoft](https://github.com/microsoft/ros_azure_iothub)
+
+[Boston Dynamics Spot Ros Wrapper - github.com/microsoft](https://github.com/microsoft/spot-ros-wrapper)
