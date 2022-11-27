@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Architectural Decision Record
-nav_order: 9
+parent: Research and Development
+nav_order: 1
 has_children: true
 ---
 
