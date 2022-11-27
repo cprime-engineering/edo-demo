@@ -42,3 +42,11 @@ has_children: false
 [Azure IoT Hub for ROS - github.com/microsoft](https://github.com/microsoft/ros_azure_iothub)
 
 [Boston Dynamics Spot Ros Wrapper - github.com/microsoft](https://github.com/microsoft/spot-ros-wrapper)
+
+## Boston Dynamics Spot
+
+[Boston Dynamics - bostondynamics.com](https://www.bostondynamics.com/)
+
+[Spot for Industrial Inspections - bostondynamics.com](https://www.bostondynamics.com/solutions/inspection)
+
+[Solutions for Warehouse Automation - bostondynamics.com](https://www.bostondynamics.com/solutions/warehouse-automation)
