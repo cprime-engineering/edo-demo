@@ -13,7 +13,7 @@ Recent global events have accelerated that revolution in ways that would have be
 
 In the field of Industry 4.0, manufacturers are integrating new technologies throughout their manufacturing operations and logistical supply chains. Including the Internet of Things (IoT), Cloud Computing, Machine Learning, Artificial Intelligence, Big Data, and Analytics.
 
-Information Technology (IT) and Operational Technology (OT) are merging technical domains. Manufacturers are building smart factories and warehouse facilities with advanced sensors and embedded software systems. Robotics is evolving rapidly with ever-increasing intelligence and decision-making on the production line powered by advances in artificial intelligence.
+Manufacturers are building smart factories and warehouse facilities with advanced sensors and embedded software systems. Robotics is evolving rapidly with ever-increasing intelligence and decision-making on the production line powered by advances in artificial intelligence. Virtual and Augmented Reality is transforming how employees train and interact with the industrial environment.
 
 Advanced engineering technologies such as 3D printing, renewable energy, and the use of nanoparticles to develop new materials may result in the most significant evolutions in how we approach manufacturing. What to many may sound like science fiction is today being implemented in the real world by forward-thinking, technically advanced companies that are winning the race to own the future of manufacturing.
 
