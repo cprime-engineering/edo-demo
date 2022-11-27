@@ -26,3 +26,9 @@ has_children: false
 [What is Industry 4.0? - IBM](https://www.ibm.com/topics/industry-4-0)
 
 [AI Customer Success Stories - Microsoft AI](https://www.microsoft.com/en-us/ai/customer-stories)
+
+## Azure IoT
+
+[Azure IoT Hub for ROS](https://github.com/microsoft/ros_azure_iothub)
+
+[Boston Dynamics Spot Ros Wrapper](https://github.com/microsoft/spot-ros-wrapper)
