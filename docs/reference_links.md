@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Reference Links
+title: References & External Links
 nav_order: 11
 has_children: false
 ---
 
-# References and External Links
+# References & External Links
 
 ## Industry 4.0
 
