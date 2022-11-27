@@ -11,6 +11,8 @@ has_children: false
 
 [Fourth Industrial Revolution - Wikipedia](https://en.wikipedia.org/wiki/Fourth_Industrial_Revolution)
 
+[Industry 4.0 - group.mercedes-benz.com](https://group.mercedes-benz.com/innovation/production/)
+
 [Industry 4.0 and the networked factory - group.mercedes-benz.com](https://group.mercedes-benz.com/innovation/case/connectivity/industry-4-0.html)
 
 [Industry 4.0 - bmwgroup.com](https://www.bmwgroup.com/en/innovation/company/industrie-4-0.html)
