@@ -22,5 +22,3 @@ has_children: false
 [Industry 4.0 - bmwgroup.com](https://www.bmwgroup.com/en/innovation/company/industrie-4-0.html)
 
 [Industry 4.0 and Indian manufacturing - Rolls-Royce](https://www.rolls-royce.com/country-sites/india/discover/2018/industry-4-0-and-Indian-manufacturing.aspx)
-
-[Industry 4.0 Market Will Reach $214B by 2023 - HSRC](https://homelandsecurityresearch.com/industry-4-0-market-will-reach-214b-2023/)
