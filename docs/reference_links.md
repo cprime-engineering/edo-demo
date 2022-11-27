@@ -29,7 +29,7 @@ has_children: false
 
 [Aerospace & Defense 4.0 - deloitte.com](https://www2.deloitte.com/us/en/insights/focus/industry-4-0/aerospace-defense-companies-digital-transformation.html)
 
-## Azure IoT
+## Azure IoT Hub
 
 [Azure IoT Hub - azure.microsoft.com](https://azure.microsoft.com/en-gb/products/iot-hub/#overview)
 
