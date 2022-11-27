@@ -29,6 +29,6 @@ The following video is an insight into the rate of change and optimization in su
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IMPbKVb8y8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The domains of Information Technology (IT) and Operational Technology (OT) are merging. The internet is evolving into an interconnected environment of people, places, and things. So too, in manufacturing and logistics, an ecology of connected and autonomous manufacturing equipment and systems is developing. Made possible by augmenting OT domains with IT technologies such as artificial intelligence (AI), big data, and cloud computing.
+The domains of Information Technology (IT) and Operational Technology (OT) are merging. The internet is evolving into an interconnected environment of people, places, and things. So too, in manufacturing and logistics, an ecology of connected and autonomous manufacturing equipment and systems is developing. Made possible by augmenting OT domains with IT technologies such as artificial intelligence, big data, and cloud computing.
 
 Protocols are becoming established for interconnectivity and communication. Such as MQTT, an OASIS standard messaging protocol for IoT. MQTT today is used in various industries, such as automotive, manufacturing, telecommunications, oil, and gas.
