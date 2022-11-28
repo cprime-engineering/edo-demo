@@ -66,3 +66,27 @@ has_children: false
 [Spot for Industrial Inspections - bostondynamics.com](https://www.bostondynamics.com/solutions/inspection)
 
 [Solutions for Warehouse Automation - bostondynamics.com](https://www.bostondynamics.com/solutions/warehouse-automation)
+
+## Spot Micro
+
+[Spot Micro Robot Dog - thingverse.com](https://www.thingiverse.com/thing:3445283)
+
+[Spot Micro Read the Docs - readthedocs.io](https://spotmicroai.readthedocs.io/en/latest/)
+
+[Spot Micro Community - Slack](https://spotmicroai-inviter.herokuapp.com/)
+
+[Spot Micro Community - Discord](https://discord.gg/aCZ7rVnhVs)
+
+[3D Printing Models - gitlab.com](https://gitlab.com/public-open-source/spotmicroai/3dprinting)
+
+[Basic Build Instructions - gitlab.com](https://gitlab.com/public-open-source/spotmicroai/basic-instructions)
+
+[Basic Runtime - gitlab.com](https://gitlab.com/public-open-source/spotmicroai/basic-runtime)
+
+[Advanced Runtime - github.com](https://github.com/mike4192/spotMicro)
+
+[Electronics - gitlab.com](https://gitlab.com/public-open-source/spotmicroai/electronics)
+
+[Simulation - gitlab.com](https://gitlab.com/public-open-source/spotmicroai/simulation)
+
+[Spot Micro Playlist - youtube.com](https://www.youtube.com/watch?v=Z1W1aomTE90&list=PLp5v7U2tXHs3BYfe93GZwuUZLGsisapic&index=4)
