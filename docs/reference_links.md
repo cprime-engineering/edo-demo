@@ -47,6 +47,8 @@ has_children: false
 
 [BMW Group publishes SORDI, the largest open-source dataset by far for super-efficient AI applications in production - press.bmwgroup.com](https://www.press.bmwgroup.com/global/article/detail/T0375993EN/bmw-group-publishes-sordi-the-largest-open-source-dataset-by-far-for-super-efficient-ai-applications-in-production)
 
+[BMW-InnovationLab - github.com](https://github.com/BMW-InnovationLab)
+
 
 ## Robot Operating System (ROS)
 
