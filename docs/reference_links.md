@@ -49,6 +49,10 @@ has_children: false
 
 [Robot Operating System -  wikipedia.org](https://en.wikipedia.org/wiki/Robot_Operating_System)
 
+[ROS-Industrial - rosindustrial.org](https://rosindustrial.org/)
+
+[ROS Industrial Members - rosindustrial.org](https://rosindustrial.org/ric/current-members/)
+
 [BMW Group is making logistics robots faster and smarter - press.bmwgroup.com](https://www.press.bmwgroup.com/global/article/detail/T0308393EN/bmw-group-is-making-logistics-robots-faster-and-smarter)
 
 [BMW Group publishes SORDI, the largest open-source dataset by far for super-efficient AI applications in production - press.bmwgroup.com](https://www.press.bmwgroup.com/global/article/detail/T0375993EN/bmw-group-publishes-sordi-the-largest-open-source-dataset-by-far-for-super-efficient-ai-applications-in-production)
