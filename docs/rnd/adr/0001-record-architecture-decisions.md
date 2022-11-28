@@ -2,7 +2,7 @@
 layout: default
 title: Record Architecture Decisions
 parent: Architectural Decision Record
-grand_parent: Research and Development
+grand_parent: Research & Development
 nav_order: 1
 ---
 

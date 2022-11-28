@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Release Process
-parent: Research and Development
+parent: Research & Development
 nav_order: 2
 has_children: false
 ---

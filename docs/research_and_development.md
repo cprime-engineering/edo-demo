@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Research and Development
+title: Research & Development
 nav_order: 10
 has_children: true
 ---
 
-# Research and Development
+# Research & Development
