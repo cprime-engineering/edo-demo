@@ -90,3 +90,15 @@ has_children: false
 [Simulation - gitlab.com](https://gitlab.com/public-open-source/spotmicroai/simulation)
 
 [Spot Micro Playlist - youtube.com](https://www.youtube.com/watch?v=Z1W1aomTE90&list=PLp5v7U2tXHs3BYfe93GZwuUZLGsisapic&index=4)
+
+## Bazel Build
+
+[Bazel Build - bazel.build](https://bazel.build/)
+
+## GitHub and GitHub Codespaces
+
+[GitHub Docs - github.com](https://docs.github.com/en)
+
+[GitHub Codespaces Overview](https://docs.github.com/en/codespaces/overview)
+
+[GitHub Actions](https://docs.github.com/en/actions)
