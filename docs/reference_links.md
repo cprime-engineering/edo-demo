@@ -45,6 +45,10 @@ has_children: false
 
 ## Robot Operating System (ROS)
 
+[ROS - Robot Operating System - ros.org](https://www.ros.org/)
+
+[Robot Operating System -  wikipedia.org](https://en.wikipedia.org/wiki/Robot_Operating_System)
+
 [BMW Group is making logistics robots faster and smarter - press.bmwgroup.com](https://www.press.bmwgroup.com/global/article/detail/T0308393EN/bmw-group-is-making-logistics-robots-faster-and-smarter)
 
 [BMW Group publishes SORDI, the largest open-source dataset by far for super-efficient AI applications in production - press.bmwgroup.com](https://www.press.bmwgroup.com/global/article/detail/T0375993EN/bmw-group-publishes-sordi-the-largest-open-source-dataset-by-far-for-super-efficient-ai-applications-in-production)
