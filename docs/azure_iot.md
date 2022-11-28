@@ -17,4 +17,6 @@ We selected Azure IoT Hub for this demonstration solution for two main reasons.
 
 The first is that BMW and Microsoft have already invested in a real-world solution within BMW's Industry 4.0 manufacturing facilities. The result is a fully operational, industrial-grade solution validated in a business-critical manufacturing environment.
 
+As a result of that project, Microsoft and BMW captured some of their findings and established an open manufacturing platform. This platform has now become a Linux Foundation project. This initiative aims to share research and development across manufacturing organizations—contributors to the platform address mutual problems, which are considered non-differentiating. Results are shared based on an open-source model.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/M1SrZOc4-Wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
