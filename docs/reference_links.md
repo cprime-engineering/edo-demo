@@ -99,6 +99,6 @@ has_children: false
 
 [GitHub Docs - github.com](https://docs.github.com/en)
 
-[GitHub Codespaces Overview](https://docs.github.com/en/codespaces/overview)
+[GitHub Codespaces Overview - github.com](https://docs.github.com/en/codespaces/overview)
 
-[GitHub Actions](https://docs.github.com/en/actions)
+[GitHub Actions - github.com](https://docs.github.com/en/actions)
