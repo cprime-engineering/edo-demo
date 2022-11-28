@@ -20,3 +20,7 @@ The first is that BMW and Microsoft have already invested in a real-world soluti
 As a result of that project, Microsoft and BMW captured some of their findings and established an open manufacturing platform. This platform has now become a Linux Foundation project. This initiative aims to share research and development across manufacturing organizations—contributors to the platform address mutual problems, which are considered non-differentiating. Results are shared based on an open-source model.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/M1SrZOc4-Wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+The issue we found with AWS is its history of competing with its own customers and using its monopoly position for leverage. An example is when AWS purchased Kiva Systems in 2012 and rebranded Kiva to Amazon Robotics shortly after AWS informed Kiva's previous customers that they could no longer buy new Kiva technology—providing AWS with a significant competitive advantage over those customers.
+
+This project intends to result in a commercially viable offering for our clients; as Microsoft has no similar history, we consider this a risk mitigation for potential commercial engagements.
