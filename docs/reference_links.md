@@ -43,14 +43,13 @@ has_children: false
 
 [Boston Dynamics Spot Ros Wrapper - github.com/microsoft](https://github.com/microsoft/spot-ros-wrapper)
 
+## Robot Operating System (ROS)
+
 [BMW Group is making logistics robots faster and smarter - press.bmwgroup.com](https://www.press.bmwgroup.com/global/article/detail/T0308393EN/bmw-group-is-making-logistics-robots-faster-and-smarter)
 
 [BMW Group publishes SORDI, the largest open-source dataset by far for super-efficient AI applications in production - press.bmwgroup.com](https://www.press.bmwgroup.com/global/article/detail/T0375993EN/bmw-group-publishes-sordi-the-largest-open-source-dataset-by-far-for-super-efficient-ai-applications-in-production)
 
 [BMW-InnovationLab - github.com](https://github.com/BMW-InnovationLab)
-
-
-## Robot Operating System (ROS)
 
 ## Boston Dynamics Spot
 
