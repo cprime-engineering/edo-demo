@@ -95,7 +95,7 @@ has_children: false
 
 [Bazel Build - bazel.build](https://bazel.build/)
 
-## GitHub and GitHub Codespaces
+## GitHub & GitHub Codespaces
 
 [GitHub Docs - github.com](https://docs.github.com/en)
 
