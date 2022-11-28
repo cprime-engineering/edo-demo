@@ -19,7 +19,7 @@ Advanced engineering technologies such as 3D printing, renewable energy, and the
 
 The winners in this race are extending their lead. One can predict a tipping point where those corporations that have ignored this revolution and failed to invest in new technology find themselves with no means to recoup, uncompetitive and redundant.
 
-A truly inspiring project that demonstrates these principles in practice is the EQXX 1000 KM challenge from Mercedes Benz. Rapid R&D applying the technologies described here resulted in a remarkable example of automotive engineering. Software in the Loop, Additive Manufacturing, AI, Advanced Materials Science, and a new manufacturing technique, Bionicast, developed within Mercedes during this project. The EQXX is not a pure R&D project; this automobile is designed from the ground up for manufacture with Industry 4.0 technology.
+A truly inspiring project that demonstrates these principles in practice is the EQXX 1000 KM challenge from Mercedes Benz. Rapid R&D applying the technologies described here resulted in a remarkable example of automotive engineering. Software in the Loop, Digital Twins, Additive Manufacturing, AI, Advanced Materials Science, and a new manufacturing technique, Bionicast, developed within Mercedes during this project. The EQXX is not a pure R&D project; this automobile is designed from the ground up for manufacture with Industry 4.0 technology.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8_O70MOK-Cg" title="YouTube video player" cc_load_policy="1" cc_lang_pref="en" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
