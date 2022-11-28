@@ -21,6 +21,8 @@ As a result of that project, Microsoft and BMW captured some of their findings a
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/M1SrZOc4-Wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+The second reason was that for the first iteration of this project, we specifically wanted to avoid building upon AWS technology. AWS provides a robust platform for Robotics development AWS Robomaker. This platform provides cloud extensions for ROS, a mature IDE, simulation, and fleet management. This platform is used by AWS themselves at scale to manage their robot fleets.
+
 The issue we found with AWS is its history of competing with its own customers and using its monopoly position for leverage. An example is when AWS purchased Kiva Systems in 2012 and rebranded Kiva to Amazon Robotics shortly after AWS informed Kiva's previous customers that they could no longer buy new Kiva technology—providing AWS with a significant competitive advantage over those customers.
 
 This project intends to result in a commercially viable offering for our clients; as Microsoft has no similar history, we consider this a risk mitigation for potential commercial engagements.
