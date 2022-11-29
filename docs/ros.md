@@ -29,4 +29,12 @@ Since its initial release in 2010, ROS has become the ubiquitous norm for roboti
 
 ### ROS Industrial
 
+The ROS-Industrial Open Source project began as the collaborative endeavor of Yaskawa Motoman Robotics, Southwest Research Institute, and Willow Garage to support using ROS for manufacturing automation. The software repository, available on GitHub, was founded by Shaun Edwards in January 2012.
+
+Led by SwRI, the ROS-Industrial Consortium Americas launched in March 2013. As you might have guessed from the name, there is also a ROS-I Consortium Europe, led by Fraunhofer IPA in Stuttgart, Germany, and a ROS-Industrial Consortium Asia Pacific, led by ARTC and NTU in Singapore.
+
+The video below is a brief documentary that exemplifies a ROS-I initiative. This video describes a joint venture between BMW Group and Microsoft implementing Industry 4.0 concepts within BMW's manufacturing facilities and within BMW's vehicles.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fAUTJa7Nrdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+ROS-Industrial extends the capabilities of ROS to manufacturing automation and robotics. The ROS-Industrial repository includes interfaces for standard industrial manipulators, grippers, sensors, and device networks. It also provides software libraries for automatic 2D/3D sensor calibration, process path/motion planning, applications like Scan-N-Plan, developer tools like the Qt Creator ROS Plugin, and training curricula specific to manufacturers' needs. An international Consortium of industry and research members supports ROS-I.
