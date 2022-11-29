@@ -23,7 +23,7 @@ Open-RMF is a software library that enables interoperability between robotic sys
 
 A software development kit and collection of reusable libraries to build robot applications. These libraries include hardware drivers, algorithms, and developer tools.
 
-Willow Garage was a robotics research lab founded in 2006 by Scott  Hassan, who had previously worked with Larry Page and Sergey Brin to develop the Google search engine algorithm. Willow Garage produced three notable open-source frameworks, Open Computer Vision (OpenCV), Point Cloud Library (PCL), and ROS.
+Willow Garage was a robotics research lab founded in 2006 by Scott Hassan, who had previously worked with Larry Page and Sergey Brin to develop the Google search engine algorithm. Willow Garage produced three notable open-source frameworks, Open Computer Vision (OpenCV), Point Cloud Library (PCL), and ROS.
 
 Since its initial release in 2010, ROS has become the ubiquitous norm for robotic operating systems. Prevalent in every type of robotic use case, including toys, drones, autonomous vehicles, home appliances, and even space exploration. Willow Garage shut down in 2014, and Open Robotics now maintains ROS.
 
