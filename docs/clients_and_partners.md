@@ -15,7 +15,7 @@ As an international business in the agricultural sector, Lely spend every day ma
 
 ## Microsoft (Information Technology)
 
-ALTEN (Cprime's Parent Company) has partnered with Microsoft to offer solutions accelerating IT/OT convergence and the digitalization of its clients' services. The Group has achieved Gold level, the highest certification, on seven competencies, and Silver level on one competency. These certifications, awarded in recognition of the ALTEN teams' expertise, particularly in Cloud and Data Services and Development of Microsoft solutions, have also been given for the Group's initiatives supporting its employees' training.
+ALTEN-Cprime has partnered with Microsoft to offer solutions accelerating IT/OT convergence and the digitalization of its clients' services. The Group has achieved Gold level, the highest certification, on seven competencies, and Silver level on one competency. These certifications, awarded in recognition of the ALTEN teams' expertise, particularly in Cloud and Data Services and Development of Microsoft solutions, have also been given for the Group's initiatives supporting its employees' training.
 
 [partner.microsoft.com](https://partner.microsoft.com/)
 
