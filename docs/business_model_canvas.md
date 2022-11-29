@@ -6,5 +6,4 @@ has_children: false
 ---
 
 # Business Model Canvas
-
-<object data=”/assets/business_model_canvas.pdf” type=”application/pdf” width=”500″></object>
+<object data="{{ site.url }}{{ site.baseurl }}/assets/business_model_canvas.pdf" width="600" type="application/pdf"></object>
