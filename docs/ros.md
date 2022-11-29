@@ -17,7 +17,7 @@ A software development kit and collection of reusable libraries to build robot a
 
 ## Gazebo
 
-A digital twin simulation environment capable of simulating robots and the environments in which those robots operate. Gazebo is used to simulate environments such as warehousing and autonomous driving and was recently used to simulate the lunar environment as part of the NASA VIPER program. Gazebo includes a physics engine, high-resolution 3D graphics, and programmatic interfaces with native integration to ROS.
+A digital twin simulation environment capable of simulating robots and the environments in which those robots operate. Gazebo is used to simulate environments such as warehousing and autonomous driving and was recently used to simulate the lunar environment as part of the NASA VIPER program. Gazebo includes a physics engine, high-resolution 3D graphics, and programmatic interfaces with native integration to ROS. Gazebo will be superseded by the Ignition libraries currently under development by Open Robotics and due for release by 2025.
 
 ## Open Robotics  Middleware Framework (Open-RMF)
 
@@ -25,6 +25,6 @@ Open-RMF is a software library that enables interoperability between robotic sys
 
 Willow Garage was a robotics research lab founded in 2006 by Scott  Hassan, who had previously worked with Larry Page and Sergey Brin to develop the Google search engine algorithm. Willow Garage produced three notable open-source frameworks, Open Computer Vision (OpenCV), Point Cloud Library (PCL), and ROS.
 
-Since its initial release in 2010, ROS has become the ubiquitous norm for robotic operating systems. Prevalent in every type of robotic use case, including toys, drones, autonomous vehicles, home appliances, and even space exploration.
+Since its initial release in 2010, ROS has become the ubiquitous norm for robotic operating systems. Prevalent in every type of robotic use case, including toys, drones, autonomous vehicles, home appliances, and even space exploration. Willow Garage shut down in 2014, and Open Robotics now maintains ROS.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fAUTJa7Nrdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
