@@ -53,6 +53,10 @@ has_children: false
 
 [ROS Industrial Members - rosindustrial.org](https://rosindustrial.org/ric/current-members/)
 
+[Gazebo - gazebosim.org](https://gazebosim.org/home)
+
+[Open RMF - open-rmf.org](https://www.open-rmf.org/)
+
 [Open Robotics - openrobotics.org](https://www.openrobotics.org/)
 
 [BMW Group is making logistics robots faster and smarter - press.bmwgroup.com](https://www.press.bmwgroup.com/global/article/detail/T0308393EN/bmw-group-is-making-logistics-robots-faster-and-smarter)
