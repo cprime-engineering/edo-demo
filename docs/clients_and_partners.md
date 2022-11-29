@@ -11,7 +11,7 @@ has_children: false
 
 Top education and research are at the heart of the Netherlands' oldest and largest technical university. TU Delft's eight faculties offer 16 bachelor's and more than 30 master's programs. More than 25,000 students and 6,000 employees share a fascination for science, design, and technology—TU Delft's common mission: impact for a better society.
 
-[tudelft.nl/](https://www.tudelft.nl/)
+[tudelft.nl](https://www.tudelft.nl/)
 
 ## Lely (Agricultural Robotics)
 
