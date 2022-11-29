@@ -27,4 +27,6 @@ Willow Garage was a robotics research lab founded in 2006 by Scott  Hassan, who 
 
 Since its initial release in 2010, ROS has become the ubiquitous norm for robotic operating systems. Prevalent in every type of robotic use case, including toys, drones, autonomous vehicles, home appliances, and even space exploration. Willow Garage shut down in 2014, and Open Robotics now maintains ROS.
 
+### ROS Industrial
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fAUTJa7Nrdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
