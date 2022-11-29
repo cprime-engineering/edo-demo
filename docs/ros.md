@@ -13,7 +13,7 @@ The ROS ecosystem consists of three software platforms:
 
 ## Gazebo
 
-A digital twin simulation environment capable of simulating robots and the environments in which those robots operate. Gazebo is used to simulate environments such as warehousing and autonomous driving and was recently used to simulate the lunar environment as part of the NASA VIPER program. Gazebo includes a physics engine, high-resolution 3D graphics, and programmatic interfaces with native integration to ROS. Gazebo will be superseded by the Ignition libraries currently under development by Open Robotics and due for release by 2025.
+A digital twin simulation environment capable of simulating robots and the environments in which those robots operate. Gazebo is used to simulate environments such as warehousing and autonomous driving and was recently used to simulate the lunar environment as part of the NASA VIPER program. Gazebo includes a physics engine, high-resolution 3D graphics, and programmatic interfaces with native integration to ROS. Gazebo will be superseded by the Ignition libraries currently under development by Open Robotics and due for release in 2025.
 
 ## Open Robotics  Middleware Framework (Open-RMF)
 
