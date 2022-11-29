@@ -53,6 +53,8 @@ has_children: false
 
 [ROS Industrial Members - rosindustrial.org](https://rosindustrial.org/ric/current-members/)
 
+[Open Robotics - openrobotics.org](https://www.openrobotics.org/)
+
 [BMW Group is making logistics robots faster and smarter - press.bmwgroup.com](https://www.press.bmwgroup.com/global/article/detail/T0308393EN/bmw-group-is-making-logistics-robots-faster-and-smarter)
 
 [BMW Group publishes SORDI, the largest open-source dataset by far for super-efficient AI applications in production - press.bmwgroup.com](https://www.press.bmwgroup.com/global/article/detail/T0375993EN/bmw-group-publishes-sordi-the-largest-open-source-dataset-by-far-for-super-efficient-ai-applications-in-production)
