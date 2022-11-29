@@ -23,4 +23,8 @@ A digital twin simulation environment capable of simulating robots and the envir
 
 Open-RMF is a software library that enables interoperability between robotic systems. Open-RMF can coordinate multiple fleets of robots with each other and integrate those robots with environmental systems. Open-RMF can coordinate communication between robotic fleets and connected systems such as doors, elevators, environmental sensors, and industrial equipment.
 
+Willow Garage was a robotics research lab founded in 2006 by Scott  Hassan, who had previously worked with Larry Page and Sergey Brin to develop the Google search engine algorithm. Willow Garage produced three notable open-source frameworks, Open Computer Vision (OpenCV), Point Cloud Library (PCL), and ROS.
+
+Since its initial release in 2010, ROS has become the ubiquitous norm for robotic operating systems. Prevalent in every type of robotic use case, including toys, drones, autonomous vehicles, home appliances, and even space exploration.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fAUTJa7Nrdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
