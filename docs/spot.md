@@ -13,3 +13,5 @@ An operator can control Spot with a hand-held control or remotely seeing through
 End users can extend the Spot robotic platform through mechanical and electrical interfaces. Boston Dynamics also maintain a robust Python software development kit to program behaviors and integrate sensors and custom payloads. Data pipelines also allow the processing of data collected by Spot in real-time utilizing AI models.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wlkCQXHEgjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qTW-dbZr4U8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
