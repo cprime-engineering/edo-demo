@@ -14,6 +14,6 @@ End users can extend the Spot robotic platform through mechanical and electrical
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wlkCQXHEgjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Due to the extensibility of the Spot platform, commercial use cases cover a wide range of applications and industry sectors, including manufacturing, construction, utilities, mining, and oil and gas. Existing customers include BP, Woodside, and Swinerton Construction. Each company has extended the Spot core platform to its individual needs.
+Due to the extensibility of the Spot platform, commercial use cases cover a wide range of applications and industry sectors, including manufacturing, construction, utilities, mining, oil and gas. Existing customers include BP, Woodside Australia, and Swinerton Construction. Each company has extended the Spot core platform to its individual needs.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qTW-dbZr4U8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
