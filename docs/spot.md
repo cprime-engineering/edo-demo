@@ -23,3 +23,11 @@ Unlike other IoT solutions that require the installation of networked sensors an
 NASA JPL configured a team of Spot robots, NeBula-SPOT, to explore a martian cave analog. This experiment was NASA JPL's response to the Subterranean Challenge, a contest sponsored by the Defense Advanced Research Projects Agency (DARPA). The result demonstrates the advanced capabilities that can be achieved with teams of robots working synchronously with complimentary payloads.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qTW-dbZr4U8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+The extensibility of the Spot platform made Spot an ideal candidate for this demonstration project. The variety of use cases and applications allows us to prototype and explore use cases with broad appeal to our potential customers. Working with machine vision and quadrupedal motion also introduces the requirement to implement machine learning in a meaningful way with a practical application to test DevOps pipelines and integrations.
+
+The autonomous nature of the Spot platform is also beneficial to this exercise, as it allows us to deploy a prototype robotic application without building significant infrastructure to model a manufacturing or warehouse environment.
+
+One negative of the Spot platform concerning this exercise is that Spot is not a native ROS platform. Applying DevSecOps practices to ROS  development is a critical architectural component to prove in this exercise. This decision is due to the potential commercial opportunity this capability could create.
+
+Clearpath Robotics has released a ROS software driver for the Spot platform; if we do indeed work with Boston Dynamics hardware in future iterations of this project, this is something we would explore.
