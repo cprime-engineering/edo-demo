@@ -8,6 +8,8 @@ has_children: false
 
 Spot from Boston Dynamics is a semi-autonomous mobile robot capable of navigating various terrain in a broad range of environmental conditions. Ideally suited to inspection tasks in environments that are potentially hazardous to humans, Spot is an ideal robotic platform for preventative maintenance use cases.
 
+An operator can control Spot with a hand-held control or remotely seeing through Spot's cameras in real-time. Robot commands include body posing, velocity, and direction. Alternatively, engineers can record maps and create missions with behavior trees by programming actions associated with specific points on the map. Spot can then use these maps to navigate planned routes autonomously.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wlkCQXHEgjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F843AqfNsaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
