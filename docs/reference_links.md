@@ -73,6 +73,8 @@ has_children: false
 
 [Solutions for Warehouse Automation - bostondynamics.com](https://www.bostondynamics.com/solutions/warehouse-automation)
 
+[Clearpath Robotics Spot Ros Driver - ros.org](http://wiki.ros.org/Robots/Spot)
+
 ## Spot Micro
 
 [Spot Micro Robot Dog - thingverse.com](https://www.thingiverse.com/thing:3445283)
