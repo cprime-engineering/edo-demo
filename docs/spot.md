@@ -16,4 +16,6 @@ End users can extend the Spot robotic platform through mechanical and electrical
 
 Due to the extensibility of the Spot platform, commercial use cases cover a wide range of applications and industry sectors, including manufacturing, construction, utilities, mining, oil and gas. Existing customers include BP, Woodside Australia, and Swinerton Construction. Each company has extended the Spot core platform to its individual needs.
 
+NASA JPL configured a team of Spot robots, NeBula-SPOT, to explore a martian cave analog. This experiment was NASA JPL's response to the Subterranean Challenge, a contest sponsored by the Defense Advanced Research Projects Agency (DARPA). The result demonstrates the advanced capabilities that can be achieved with teams of robots working synchronously with complimentary payloads.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qTW-dbZr4U8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
