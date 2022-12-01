@@ -16,7 +16,7 @@ End users can extend the Spot robotic platform through mechanical and electrical
 
 Due to the extensibility of the Spot platform, commercial use cases cover a wide range of applications and industry sectors, including manufacturing, construction, utilities, mining, oil and gas. Existing customers include BP, Woodside Australia, and Swinerton Construction. Each company has extended the Spot core platform to its individual needs.
 
-One of the strengths of the Spot platform is how it can bring advanced robotic and monitoring capabilities into a manufacturing or industrial environment with no additional infrastructure requirements. Companies can accomplish automated preventative maintenance routines without a significant infrastructure overhaul.
+One of the commercial strengths of the Spot platform is how it can bring advanced robotic and monitoring capabilities into a manufacturing or industrial environment with no additional infrastructure requirements. Companies can accomplish automated preventative maintenance routines without a significant infrastructure overhaul.
 
 Unlike other IoT solutions that require the installation of networked sensors and actuators into plant equipment, Spot can be deployed as a stand-alone autonomous asset. Capable of thermal inspection, lidar scanning, gauge reading, radiation detection, leak detection, and noise anomaly detection.
 
