@@ -120,3 +120,7 @@ has_children: false
 [National Robotics Engineering Center DevOps Engineer Role - nrec.ri.cmu.edu](https://www.nrec.ri.cmu.edu/careers/devops-engineer.html)
 
 [DevOps and robotics merge to create 'Robotops' rule-set  - engadget.com](https://www.engadget.com/2016-08-22-devops-and-robotics-merge-to-create-robotops-rule-set.html)
+
+##  DevSecOps & IoT
+
+[JFrog Unveils DevSecOps for IoT – Bringing Trusted Software to the Edge - jfrog.com](https://jfrog.com/press/jfrog-unveils-devsecops-for-iot-bringing-trusted-software-to-the-edge/)
