@@ -116,3 +116,5 @@ has_children: false
 [DevSecOps in Robotics - aliasrobotics.com](https://arxiv.org/pdf/2003.10402v1.pdf)
 
 [Applying DevOps Principles to Robotics](https://blog.mechanicalrock.io/2021/12/20/robot-devops.html)
+
+[National Robotics Engineering Center DevOps Engineer Role - nrec.ri.cmu.edu](https://www.nrec.ri.cmu.edu/careers/devops-engineer.html)
