@@ -124,3 +124,5 @@ has_children: false
 ##  DevSecOps & IoT
 
 [JFrog Unveils DevSecOps for IoT – Bringing Trusted Software to the Edge - jfrog.com](https://jfrog.com/press/jfrog-unveils-devsecops-for-iot-bringing-trusted-software-to-the-edge/)
+
+[DevSecOps Brings Payoffs through Security by Design - iotworldtoday.com](https://www.iotworldtoday.com/2021/08/02/devsecops-brings-payoffs-through-security-by-design/)
