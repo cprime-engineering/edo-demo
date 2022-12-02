@@ -11,4 +11,4 @@ has_children: false
 
 ## Dog Food for Spot
 
-Dog fooding. If you want to sell products to people that build robots, you need to build some robots!
+Dog fooding. If you want to sell products to people that build robots, you need to build some robots.
