@@ -123,6 +123,8 @@ has_children: false
 
 ##  DevSecOps & IoT
 
+[DevSecOps Methodology for NG-IoT Ecosystem Development Lifecycle - ASSIST-IoT perspective - researchgate.net](https://www.researchgate.net/publication/352881193_DevSecOps_Methodology_for_NG-IoT_Ecosystem_Development_Lifecycle_-_ASSIST-IoT_perspective)
+
 [JFrog Unveils DevSecOps for IoT – Bringing Trusted Software to the Edge - jfrog.com](https://jfrog.com/press/jfrog-unveils-devsecops-for-iot-bringing-trusted-software-to-the-edge/)
 
 [DevSecOps Brings Payoffs through Security by Design - iotworldtoday.com](https://www.iotworldtoday.com/2021/08/02/devsecops-brings-payoffs-through-security-by-design/)
