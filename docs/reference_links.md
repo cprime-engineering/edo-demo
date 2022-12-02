@@ -110,3 +110,7 @@ has_children: false
 [GitHub Codespaces Overview - github.com](https://docs.github.com/en/codespaces/overview)
 
 [GitHub Actions - github.com](https://docs.github.com/en/actions)
+
+## DevSecOps & Robotics
+
+[DevSecOps in Robotics - aliasrobotics.com](https://arxiv.org/pdf/2003.10402v1.pdf)
