@@ -136,3 +136,5 @@ has_children: false
 [Robotics Outlook 2030: How Intelligence and Mobility Will Shape the Future - bcg.com](https://www.bcg.com/publications/2021/how-intelligence-and-mobility-will-shape-the-future-of-the-robotics-industry)
 
 [Industrial Robotics: Insights into the sector's future growth dynamics - mckinsey.com](https://www.mckinsey.com/~/media/mckinsey/industries/advanced%20electronics/our%20insights/growth%20dynamics%20in%20industrial%20robotics/industrial-robotics-insights-into-the-sectors-future-growth-dynamics.pdf)
+
+[Robot Fast Food Cook Costs Less Than Half A Human Worker - forbes.com](https://www.forbes.com/sites/johnkoetsier/2022/09/28/robot-fast-food-cook-costs-less-than-half-a-human-worker/)
