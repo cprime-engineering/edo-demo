@@ -128,3 +128,9 @@ has_children: false
 [JFrog Unveils DevSecOps for IoT – Bringing Trusted Software to the Edge - jfrog.com](https://jfrog.com/press/jfrog-unveils-devsecops-for-iot-bringing-trusted-software-to-the-edge/)
 
 [DevSecOps Brings Payoffs through Security by Design - iotworldtoday.com](https://www.iotworldtoday.com/2021/08/02/devsecops-brings-payoffs-through-security-by-design/)
+
+## Industry Analysis
+
+[25 Revolutionary Robotics Industry Statistics [2022] - zippia.com](https://www.zippia.com/advice/robotics-industry-statistics/)
+
+[Robotics Outlook 2030: How Intelligence and Mobility Will Shape the Future - bcg.com](https://www.bcg.com/publications/2021/how-intelligence-and-mobility-will-shape-the-future-of-the-robotics-industry)
