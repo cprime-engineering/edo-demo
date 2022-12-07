@@ -134,3 +134,5 @@ has_children: false
 [25 Revolutionary Robotics Industry Statistics [2022] - zippia.com](https://www.zippia.com/advice/robotics-industry-statistics/)
 
 [Robotics Outlook 2030: How Intelligence and Mobility Will Shape the Future - bcg.com](https://www.bcg.com/publications/2021/how-intelligence-and-mobility-will-shape-the-future-of-the-robotics-industry)
+
+[Industrial Robotics: Insights into the sector's future growth dynamics - mckinsey.com](https://www.mckinsey.com/~/media/mckinsey/industries/advanced%20electronics/our%20insights/growth%20dynamics%20in%20industrial%20robotics/industrial-robotics-insights-into-the-sectors-future-growth-dynamics.pdf)
