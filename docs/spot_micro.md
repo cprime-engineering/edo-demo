@@ -15,9 +15,9 @@ A long-established Agile practice, when "Dogfooding" a developer tries out the s
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/S-uzWG9Z-5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The SpotMicro robot model was developed by Deok-Yeon Kim and released on Thingiverse in 2019. The Boston Dynamics Spotmini inspired the design for the SpotMicro.
+The SpotMicro robot model was developed by Deok-Yeon Kim and released on Thingiverse in 2019; Boston Dynamics Spotmini inspired the design.
 
-SpotMicro was an ideal development platform for this project. We need an affordable working prototype that will allow us to demonstrate continuous integration and delivery of production-grade robotics software. This exercise must deploy software into a physical robotic device, and the complexity of that software must be comparable to a real-world scenario. The SpotMicro open-source robot allows us to demonstrate all of these characteristics.
+SpotMicro is an ideal development platform for this project. We need an affordable working prototype that will allow us to demonstrate continuous integration and delivery of production-grade robotics software. This exercise must deploy software into a physical robotic device, and the complexity of that software must be comparable to a real-world scenario. The SpotMicro open-source robot allows us to demonstrate all of these characteristics.
 
 For the first iteration of this project, commercial robots such as Boston Dynamics Spot are beyond our budgetary constraints. Accessibility to these platforms and lead times for delivery is also an issue. Our objective is to create an interactive swarm of robots that would further inflate our costs.
 
