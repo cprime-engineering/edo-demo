@@ -27,4 +27,4 @@ There is currently a working Bezier Gait Environment with Randomizable Body and 
 
 The SpotMicro robot has a small but active and highly skilled community surrounding it. As we intend to open-source all results of this exercise, we may also find additional development support amongst that community.
 
-We had other choices of robotic platforms, including iRobot Create and the Turtlebot from Clearpath Robotics. SpotMicro offers more opportunities for low-level feature development and offers us exposure to dealing with the construction of building physical hardware.
+We had other choices of robotic platforms, including iRobot Create and the Turtlebot from Clearpath Robotics. SpotMicro offers more opportunities for low-level feature development and offers us exposure to dealing with the construction of building physical hardware. The experience we will gain from this process outweighs the convenience of selecting a ready-made robotic platform.
