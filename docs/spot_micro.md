@@ -11,7 +11,7 @@ Eating your own dog food or "dogfooding" is the practice of using one's own prod
 
 A long-established Agile practice, when "Dogfooding" a developer tries out the software they developed as if they were a regular user. For us, this means:
 
-"If you want to sell products and services to people that build robots, you need to build some robots."
+"If we want to sell products and services to people that build robots, we need to build some robots."
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/S-uzWG9Z-5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
